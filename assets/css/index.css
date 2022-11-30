@@ -226,18 +226,22 @@ li {
 }
 
 .celcious-banner-search {
-
+border-radius: none;
   max-width: 600px;
   margin: 15px auto 0;
   display: flex;
+  border: none;
 }
 
 .celcious-banner-form {
   height: 50px;
   width: 500px;
+  border: none;
+  
 }
 
 .search-field {
+  border: none;
   height: 50px;
   width: 500px;
   border-top-left-radius: 10px;
@@ -275,6 +279,8 @@ li {
   background-color: #ffffff;
   border-radius: 2px;
   border-radius: 10px;
+  border: none;
+  /* outline: none; */
 
 }
 
@@ -318,16 +324,18 @@ li {
     margin-top: 20px;
     height: 40px;
     width: 200px;
-
+border-color: none;
 
   }
 
   .celcious-banner-button button {
+    border-color: none;
     height: 30px;
     width: 40px;
-    background-color: #ffffff;
-    border-radius: 2px;
-    border-radius: 10px;
+    /* background-color: #ffffff; */
+    border-radius: 2px solid;
+    border-radius: 10px solid;
     font-size: 10px;
-  }
+    outline: none;
+}
 }
