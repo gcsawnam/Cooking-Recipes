@@ -2,99 +2,116 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./assets/css/index.css">
-<script src="https://kit.fontawesome.com/07540df53b.js" crossorigin="anonymous"></script>
-<script src="./assets/js/index.js"></script>
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/image.css">
+    <script src="https://kit.fontawesome.com/07540df53b.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
+    <title>Document</title>
 </head>
 
 <body>
-<!-- navbar section starts here -->
+    <!-- navbar section starts here -->
 
-<nav class="navbar_container">
+    <header id="masthead" class="Celcious_Overlay">
+        <div class="celcious_Overlay_Menu_Bar">
+            <div class="celcious-cooking-menu-wrapper">
+                <div id="primary-menu">
+                    <li> <a href="#">>Search recipes</a></li>
+                    <li><a href="#">inspiration</a></li>
+                    <li><a href="#">What is Celsius cooking</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuWrapper()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="celcious-cooking-site-branding ">
+            <p>Celsius<sup>o</sup> cooking<sup>Tm</sup></p>
+        </div>
+        <div class="celcious-cooking-menu-wrapper1 ">
+            <li><a href="#">Search recipes</a></li>
+            <li><a href="#">inspiration</a></li>
+            <li><a href="#">What is Celsius cooking</a></li>
+            <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="celcious-header-right">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa-solid fa-earth-asia"> </i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">English</a>
+                    <a href="#">Nedrlands</a>
+                    <a href="#">Dansk</a>
+                    <a href="#">Suomi</a>
+                    <a href="#">Deutsch</a>
+                    <a href="#">Espano</a>
+                    <a href="#">italiano</a>
+                </div>
+            </div>
+            <div>
+                <button type="submit " onclick="searchIcon"><i class="fa-regular fa-heart"></i></button>
 
-<div class="menubar">
-<div class="topnav">
- 
+            </div>
+            <div>
+                <div class="celcious-right-searchIcons">
+                    <form class="celcious-right-searchIcons-form" action="#">
+                        <div>
+                            <input class='searchIcons-Box' type="text" placeholder="Search.." id="searchIcons">
+                        </div>
+                        <div>
+                            <button type="submit " onclick="searchIcon"><i class="fa fa-search"></i></button>
+                        </div>
 
-<div id="myLinks">
-<li class="item2">Search recipes</li>
-<li class="item2">inspiration</li>
-<li class="item2">What is Celsius cooking</li>
-<li class="item2">FAQ</li>
-</div>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-<i class="fa fa-bars"></i>
-</a>
-</div>
-</div>
-<div class="left child">
-<p class="item1"class="item1">Celsius<sup>o</sup> cooking<sup>Tm</sup></p>
-</div>
-<div class="middle child">
-<a href=""><li class="item-1">search recipes</li></a>
-<a href=""><li class="item-1">Inspiration</li></a>
-<a href=""><li class="item-1">What is Celcius Cooking</li></a>
-<a href=""><li class="item-1">FAQ </li></a>
- 
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
 
-</div>
-<div class="right child">
-<div class="dropdown">
-<button class="dropbtn">
-<i class="fa-solid fa-earth-asia"></i>
-</button>
-<div class="dropdown-content">
-<a href="#">English</a>
-<a href="#">Nedrlands</a>
-<a href="#">Dansk</a>
-<a href="#">Suomi</a>
-<a href="#">Deutsch</a>
-<a href="#">Espano</a>
-<a href="#">italiano</a>
-<a href="#">Link 2</a>
-<a href="#">Link 3</a>
-</div>
-</div>
-<div><i class="fa-regular fa-heart"></i></div>
- 
-
-<div><i class="fa-solid fa-magnifying-glass"></i></div>
- 
+    <!-- image section starts here  -->
+    <div class="celcious-cooking-banner-wrapper">
+        <div class="celcious-cooking-container">
+            <div class="celcious-cooking-banner-content-inner">
+                <div class="celcious-cooking-banner-content">
+                    <h1>Temperature Controlled cooking.</h1>
+                    <h1>it's in your hands</h1>
+                    <div class="celcious-banner-search">
 
 
-</div>
-</div>
-</nav>
-<!-- navbae section ends heere -->
+                        <div class="celcious-banner-form">
+                            <form action="#">
+                                <input type="text" placeholder="search.." class="search-field">
+                        </div>
+                        <div>
+                            <button type="submit" class="search-submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="celcious-banner-button">
+                        <div> <button>
+                                Dinner
+                            </button></div>
+                        <div> <button>
+                                Lunch
+                            </button></div>
+                        <div> <button>
+                                Snacks
+                            </button></div>
 
-
-
-
-
-<!-- main div section starts here -->
-<div class="main_Container">
-
-    <div class="text-1 div1"><h1>Temperature Controlled cooking.</h1>
-    <h2>it's in your hands</h2></div>
-    <div class="search-1 div1">
-        <div class="search_Bar"><p>Search..</p>  </div>
-            <div class="search_Icons"><p id="search"><i class="fa-solid fa-magnifying-glass"></i></p></div>
-      
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="button-1 div1">
-<div class="dinner"><p>Dinner</p></div>
-<div class="lunch"><p>Lunch</p></div>
-<div class="snacks"><p>Snacks</p></div>
 
-
-    </div>
-</div>
-
-<!-- <-- main div section ends here --> 
+    <!-- <--image section ends here -->
 </body>
 
 </html>
