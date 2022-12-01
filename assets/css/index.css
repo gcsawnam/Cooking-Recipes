@@ -5,47 +5,44 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --padding: 8rem;
+}
+
+.withpadding {
+  padding: 0 var(--padding);
+}
+
 body {
-  width: 100vw;
+
   overflow-x: hidden;
 }
 
-/* NavbarSection Starts here */
-.navbar_Section {
-  height: 10vh;
+html {
+  font-family: "Inter", sans-serif;
 }
 
-.image {
-  width: 100vw;
-  height: 90vh;
-  object-fit: cover;
-}
-
-img {
-  width: 100vw;
-  height: 90vh;
-}
-
-.Celcious_Overlay {
+/* NavbarSection Section starts here */
+.celsius-Overlay {
   /* border: 2px solid red; */
-  height: 13vh;
-  width: 100vw;
+  height: 60px;
+  background-color: #fff;
   display: flex;
 
   align-items: center;
   justify-content: space-evenly;
 }
 
-.celcious_Overlay_Menu_Bar {
+.celsius-Overlay-Menu_Bar {
   display: none;
 }
 
-.celcious-cooking-site-branding {
+.celsius-cooking-site-branding {
   flex: 1;
   text-align: center;
 }
 
-.celcious-cooking-menu-wrapper1 {
+.celsius-cooking-menu-wrapper1 {
   flex: 2;
   height: 100%;
   display: flex;
@@ -53,16 +50,36 @@ img {
   justify-content: space-evenly;
 }
 
-a {
-  text-decoration: none;
-}
-
 li {
   list-style: none;
   color: black;
+
 }
 
-.celcious-header-right {
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.celsius-cooking-menu-wrapper1 a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width .3s;
+
+}
+
+.celsius-cooking-menu-wrapper1 a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.celsius-header-right {
   flex: 1;
   display: flex;
   align-items: center;
@@ -115,41 +132,50 @@ li {
   display: block;
 }
 
-.celcious-right-searchIcons-form {
+.celsius-right-searchIcons-form {
   display: flex;
 }
+
+.celsius-header-search-icon, .celsius-header-heart-icon button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 16px;
+
+}
+
 
 /* Navbar Section Ends here*/
 
 /*Media Queries section starts here of Navigation bars*/
 
 @media only screen and (max-width:480px) {
-  .Celcious_Overlay {
+  .Celsius-Overlay {
     font-size: 0.5rem;
     justify-content: space-evenly;
   }
 
-  .celcious-cooking-menu-wrapper1 {
+  .celsius-cooking-menu-wrapper1 {
     visibility: hidden;
   }
 
-  .celcious_Overlay_Menu_Bar {
+  .celsius-Overlay-Menu_Bar {
     display: block;
     flex: 0.3;
   }
 
 
-  .celcious-cooking-menu-wrapper #primary-menu {
+  .celsius-cooking-menu-wrapper #primary-menu {
     display: none;
     list-style: none;
     margin-top: 7rem;
   }
 
-  .celcious-cooking-menu-wrapper #primary-menu li {
+  .celsius-cooking-menu-wrapper #primary-menu li {
     background-color: #f9f9f9;
   }
 
-  .celcious-cooking-menu-wrapper a {
+  .celsius-cooking-menu-wrapper a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -160,7 +186,7 @@ li {
     color: black;
   }
 
-  .celcious-cooking-menu-wrapper a.icon {
+  .celsius-cooking-menu-wrapper a.icon {
     /* background: black; */
     display: block;
     position: absolute;
@@ -168,7 +194,7 @@ li {
     top: 0;
   }
 
-  .celcious-cooking-menu-wrapper a:hover {
+  .celsius-cooking-menu-wrapper a:hover {
     background-color: #ddd;
     color: black;
   }
@@ -182,8 +208,8 @@ li {
 /* Media Queries Section Ends here of Naviagation Bars*/
 
 /* images parts starts here */
-.celcious-cooking-banner-wrapper {
-  background-image: url('../Images/image3.jpg');
+.celsius-cooking-banner-wrapper {
+  background-image: url('../Images/Banner.jpg');
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -198,7 +224,7 @@ li {
 
 }
 
-.celcious-cooking-banner-wrapper .celcious-cooking-banner-content-inner {
+.celsius-cooking-banner-content-inner {
   position: relative;
   z-index: 99;
   text-align: center;
@@ -209,7 +235,7 @@ li {
   align-items: center;
 }
 
-.celcious-cooking-banner-wrapper .celcious-cooking-banner-content-inner .celcious-cooking-banner-content {
+.celsius-cooking-banner-content {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -220,37 +246,45 @@ li {
   align-items: center;
 }
 
-.celcious-cooking-banner-wrapper .celcious-cooking-banner-content-inner .celcious-cooking-banner-content h1 {
+.celsius-cooking-banner-content h1 {
   color: white;
   font-size: 40px;
 }
 
-.celcious-banner-search {
-border-radius: none;
+.celsius-banner-search {
+  border-radius: none;
   max-width: 600px;
   margin: 15px auto 0;
   display: flex;
   border: none;
+  position: relative;
+  top: 25px;
 }
 
-.celcious-banner-form {
+.celsius-banner-form {
   height: 50px;
   width: 500px;
   border: none;
-  
+
 }
 
 .search-field {
   border: none;
-  height: 50px;
+  height: 44px;
   width: 500px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-
 }
 
+.search-field::placeholder {
+  position: relative;
+  color: black;
+  left: 15px;
+}
+
+
 .search-submit {
-  height: 50px;
+  height: 44px;
   width: 50px;
   background-color: black;
   border-top-right-radius: 50px 100px;
@@ -261,25 +295,29 @@ border-radius: none;
   color: white;
 }
 
-.celcious-banner-button {
+.celsius-banner-button {
   position: relative;
   left: -90px;
+  top: 10px;
   margin-top: 20px;
   height: 40px;
   width: 400px;
-
+  margin-left: 20px;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 
 }
 
-.celcious-banner-button button {
-  height: 38px;
+.celsius-banner-button button {
+  height: 30px;
   width: 90px;
   background-color: #ffffff;
   border-radius: 2px;
   border-radius: 10px;
   border: none;
+  margin-left: 10px;
+  color: black;
+  font-size: 12px;
   /* outline: none; */
 
 }
@@ -287,18 +325,18 @@ border-radius: none;
 /* media queries of image section starts here */
 @media only screen and (max-width:480px) {
 
-  .celcious-cooking-banner-wrapper .celcious-cooking-banner-content-inner .celcious-cooking-banner-content h1 {
+  .celsius-cooking-banner-wrapper .celcious-cooking-banner-content-inner .celcious-cooking-banner-content h1 {
     color: white;
     font-size: 20px;
   }
 
-  .celcious-banner-search {
+  .celsius-banner-search {
     max-width: 200px;
     margin: 15px auto 0;
     display: flex;
   }
 
-  .celcious-banner-form {
+  .celsius-banner-form {
     height: 50px;
     width: 100px;
   }
@@ -317,18 +355,18 @@ border-radius: none;
 
   }
 
-  .celcious-banner-button {
+  .celsius-banner-button {
     position: relative;
     top: -10px;
     left: -40px;
     margin-top: 20px;
     height: 40px;
     width: 200px;
-border-color: none;
+    border-color: none;
 
   }
 
-  .celcious-banner-button button {
+  .celsius-banner-button button {
     border-color: none;
     height: 30px;
     width: 40px;
@@ -337,5 +375,93 @@ border-color: none;
     border-radius: 10px solid;
     font-size: 10px;
     outline: none;
+  }
 }
+
+/* Rise Blocks Section starts here */
+
+
+.rise-blocks-section-wrapper {
+
+  position: relative;
+  left: -48px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-left: 15px;
+  max-width: 1325px;
+  /* background-color: blue; */
+
+  background-color: #fff;
+}
+
+.wp-block-rise-blocks-section .rise-blocks-section-wrapper .rise-blocks-section-inner {
+  position: relative;
+
+}
+
+section {
+  display: block;
+}
+
+.rise-blocks-heading-section {
+
+  padding-top: 0px;
+  padding-left: 18px;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  justify-content: center;
+  text-align: center;
+}
+
+.rise-blocks-subtitle {
+  position: relative;
+  top: 4px;
+  left: 11px;
+  font-size: 20px;
+}
+
+/* Rise Blocks Section ends here */
+.dr-search-item-wrap-main-section {
+  display: flex;
+  border: 2px solid red;
+}
+
+.dr-archive-items {
+  height: 310px;
+}
+
+.dr-archive-items img {
+  height: 290px;
+  width: 323px;
+}
+
+.dr-achive-details-title {
+  /* width: 323px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.dr-achive-details-title button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 16px;
+}
+
+.dr-achive-details-title button .fa-heart {
+  color: red;
+}
+
+.dr-achive-details-title span {
+  font-weight: bold;
+
+}
+
+.dr-achive-details-paragraph {
+  margin-top: 10px;
+  font-family: "Inter", sans-serif !important;
+  /* font-size: 14px; */
 }
