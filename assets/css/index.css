@@ -426,7 +426,12 @@ section {
 /* Rise Blocks Section ends here */
 .dr-search-item-wrap-main-section {
   display: flex;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  height: 550px;
+}
+
+.dr-search-item-wrap-first-items {
+  height: 504px;
 }
 
 .dr-archive-items {
@@ -464,4 +469,208 @@ section {
   margin-top: 10px;
   font-family: "Inter", sans-serif !important;
   /* font-size: 14px; */
+}
+
+.dr-search-item-wrap-second-items, .dr-search-item-wrap-third-items {
+  margin-left: 50px;
+  /* background-color: red; */
+  height: 504px;
+}
+
+.dr-achive-details-icons {
+  display: flex;
+}
+
+.dr-achive-details-icons p {
+  margin-left: 10px;
+
+}
+
+.fa-utensils {
+  margin-left: 15px;
+}
+
+.dr-achive-details-pan-icon {
+  margin-top: 20px;
+  display: flex;
+  /* border: 2px solid red; */
+  width: 80px;
+  justify-content: space-between;
+}
+
+.dr-achive-details-pan-icon .fa-kitchen-set {
+  font-size: 25px;
+
+}
+
+.achive-details-meat-items-title {
+  /* background-color: rgb(38, 0, 255); */
+  font-size: 30px;
+  height: 50px;
+}
+
+
+.rise-blocks-boxed-image-section img {
+  height: 420px;
+  width: 503px;
+}
+
+.rise-blocks-boxed-section-inner {
+  display: flex;
+  /* background-color: red; */
+}
+
+.rise-blocks-section-blocks-instance-2 {
+  height: 405px;
+  margin-top: 30px;
+  width: 1300px;
+  /* background-color: blue; */
+}
+
+.rise-blocks-boxed-title-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.rise-blocks-boxed-subtitle-section {
+  margin-left: 45px;
+  width: 483px;
+}
+
+.rise-blocks-boxed-subtitle-section strong {
+  font-size: 20px;
+}
+
+.rise-blocks-boxed-subtitle-section p {
+  line-height: 27px;
+  margin-top: 15px;
+}
+
+.rise-blocks-boxed-button-section {
+  background-color: #222;
+  margin-left: 45px;
+  margin-top: 48px;
+  height: 43px;
+  width: 209px;
+  text-align: center;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.rise-blocks-boxed-button-section button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 12px;
+  margin-top: 12px;
+  color: white;
+
+}
+
+.rise-blocks-section-block-instance-3 {
+  height: 405px;
+  margin-top: 70px;
+  width: 1300px;
+  /* background-color: red; */
+}
+
+.rise-blocks-boxed-section-inner-2 {
+  display: flex;
+}
+
+.rise-blocks-boxed-image-section-1 img {
+  height: 420px;
+  width: 503px;
+  margin-left: 30px;
+
+}
+
+.rise-blocks-boxed-title-section-1 {
+  display: flex;
+  flex-direction: column;
+  width: 483px;
+}
+
+.rise-blocks-boxed-title-section-1 strong {
+  font-size: 20px;
+}
+
+.rise-blocks-boxed-title-section-1 p {
+  line-height: 27px;
+  margin-top: 15px;
+}
+
+.rise-blocks-boxed-button-section1 {
+  background-color: #222;
+  margin-left: 5px;
+  margin-top: 48px;
+  height: 43px;
+  width: 209px;
+  text-align: center;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.rise-blocks-boxed-button-section1 button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 12px;
+  margin-top: 12px;
+  color: white;
+
+}
+
+
+.celsius-cooking-footer-area-wrapper{
+ margin-top: 90px;
+ /* background: #010834; */
+ padding: 15px 0 10px;
+ border-top: 1px solid #eee;
+
+}
+.celsius-cooking-container1{
+  max-width: 1140px;
+ 
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* padding-left: 15px;
+  padding-right: 15px;
+} */}
+.celsius-cooking-widget-wrapper {
+  color: #fff;
+}
+.wp-container-9-image{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.wp-container-8 img{
+  height: 60px;
+  width: 120px;
+  margin-left: 10px;
+  
+}
+.nav-menu-2{
+  margin-top: 10px;
+}
+#menu-footer-menu{
+  max-width: 800px;
+  margin-left: 190px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.celsius-cooking-footer-copyright-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
