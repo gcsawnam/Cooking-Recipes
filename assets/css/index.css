@@ -626,48 +626,47 @@ section {
 }
 
 
-.celsius-cooking-footer-area-wrapper{
- margin-top: 90px;
- /* background: #010834; */
- padding: 15px 0 10px;
- border-top: 1px solid #eee;
-
+.celsius-cooking-footer-area-wrapper {
+  margin-top: 90px;
+  padding: 15px 0 10px;
+  border-top: 1px solid #eee;
 }
-.celsius-cooking-container1{
+
+.celsius-cooking-container1 {
   max-width: 1140px;
- 
-  /* margin-right: auto;
-  margin-left: auto; */
-  /* padding-left: 15px;
-  padding-right: 15px;
-} */}
+}
+
 .celsius-cooking-widget-wrapper {
   color: #fff;
 }
-.wp-container-9-image{
+
+.wp-container-9-image {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
 }
-.wp-container-8 img{
+
+.wp-container-8 img {
   height: 60px;
   width: 120px;
   margin-left: 10px;
-  
+
 }
-.nav-menu-2{
+
+.nav-menu-2 {
   margin-top: 10px;
 }
-#menu-footer-menu{
+
+#menu-footer-menu {
   max-width: 800px;
   margin-left: 190px;
-  /* background-color: red; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.celsius-cooking-footer-copyright-text{
+
+.celsius-cooking-footer-copyright-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
