@@ -5,12 +5,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-:root {
-  --padding: 8rem;
-}
 
 .withpadding {
-  padding: 0 var(--padding);
+  padding-left: 90px;
 }
 
 body {
@@ -25,10 +22,9 @@ html {
 /* NavbarSection Section starts here */
 .celsius-Overlay {
   /* border: 2px solid red; */
-  height: 60px;
+  height: 120px;
   background-color: #fff;
   display: flex;
-
   align-items: center;
   justify-content: space-evenly;
 }
@@ -40,6 +36,9 @@ html {
 .celsius-cooking-site-branding {
   flex: 1;
   text-align: center;
+  font-size: 25px;
+  margin-left: 14px;
+  font-weight: bold;
 }
 
 .celsius-cooking-menu-wrapper1 {
@@ -56,12 +55,12 @@ li {
 
 }
 
-a {
+.celsius-cooking-menu-wrapper1 li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 23px;
   color: #000;
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 
 .celsius-cooking-menu-wrapper1 a::after {
@@ -108,7 +107,7 @@ a {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -122,6 +121,9 @@ a {
   text-align: left;
 
 
+}
+.fa-earth-asia{
+  font-size: 30px;
 }
 
 .dropdown-content a:hover {
@@ -142,6 +144,12 @@ a {
   border: none;
   font-size: 16px;
 
+}
+.celsius-header-search-icon{
+  font-size: 30px;
+}
+.celsius-header-heart-icon .fa-heart{
+  font-size: 30px;
 }
 
 
@@ -210,7 +218,8 @@ a {
 /* images parts starts here */
 .celsius-cooking-banner-wrapper {
   background-image: url('../Images/Banner.jpg');
-  height: 600px;
+  height: 800px;
+  /* width: 1920px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,6 +228,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
 
 
@@ -248,7 +258,7 @@ a {
 
 .celsius-cooking-banner-content h1 {
   color: white;
-  font-size: 40px;
+  font-size: 51px;
 }
 
 .celsius-banner-search {
@@ -382,115 +392,97 @@ a {
 
 
 .rise-blocks-section-wrapper {
-
+  max-width: 1980px;
+  height: 100px;
   position: relative;
-  left: -48px;
-  padding-right: 15px;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  padding-left: 15px;
-  max-width: 1325px;
-  /* background-color: blue; */
-
-  background-color: #fff;
-}
-
-.wp-block-rise-blocks-section .rise-blocks-section-wrapper .rise-blocks-section-inner {
-  position: relative;
-
-}
-
-section {
-  display: block;
+  left: 20px;
+  /* background-color: red; */
 }
 
 .rise-blocks-heading-section {
-
-  padding-top: 0px;
-  padding-left: 18px;
-  /* background-color: red; */
+  padding-left: 135px;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 700px;
-  justify-content: center;
-  text-align: center;
+}
+
+.rise-blocks-title {
+  position: relative;
+  top: 40px;
 }
 
 .rise-blocks-subtitle {
   position: relative;
-  top: 4px;
+  top: 42px;
   left: 11px;
   font-size: 20px;
 }
 
 /* Rise Blocks Section ends here */
-.dr-search-item-wrap-main-section {
+.celsius-search-item-wrap-main-section {
   display: flex;
-  /* border: 2px solid red; */
+  height: 700px;
+  justify-content: space-evenly;
+}
+
+.celsius-search-item-wrap-first-items {
   height: 550px;
 }
 
-.dr-search-item-wrap-first-items {
-  height: 504px;
+
+
+.celsius-archive-items img {
+  height: 400px;
+  width: 400px;
 }
 
-.dr-archive-items {
-  height: 310px;
-}
-
-.dr-archive-items img {
-  height: 290px;
-  width: 323px;
-}
-
-.dr-achive-details-title {
+.celsius-achive-details-title {
   /* width: 323px; */
   display: flex;
   justify-content: space-between;
 }
 
-.dr-achive-details-title button {
+
+.celsius-achive-details-title button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  font-size: 16px;
+  font-size: 28px;
 }
 
-.dr-achive-details-title button .fa-heart {
+.celsius-achive-details-title button .fa-heart {
   color: red;
 }
 
-.dr-achive-details-title span {
+.celsius-achive-details-title span {
   font-weight: bold;
-
+  font-size: 25px;
 }
 
-.dr-achive-details-paragraph {
+.celsius-achive-details-paragraph {
   margin-top: 10px;
   font-family: "Inter", sans-serif !important;
-  /* font-size: 14px; */
+  font-size: 19px;
 }
 
-.dr-search-item-wrap-second-items, .dr-search-item-wrap-third-items {
-  margin-left: 50px;
-  /* background-color: red; */
-  height: 504px;
-}
-
-.dr-achive-details-icons {
+.celsius-achive-details-icons {
   display: flex;
+  margin-top: 10px;
 }
 
-.dr-achive-details-icons p {
-  margin-left: 10px;
+.celsius-achive-details-icons .fa-clock {
+  font-size: 20px;
+}
+
+
+.celsius-achive-details-icons p {
+  margin-left: 15px;
 
 }
 
 .fa-utensils {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
-.dr-achive-details-pan-icon {
+.celsius-achive-details-pan-icon {
   margin-top: 20px;
   display: flex;
   /* border: 2px solid red; */
@@ -498,60 +490,94 @@ section {
   justify-content: space-between;
 }
 
-.dr-achive-details-pan-icon .fa-kitchen-set {
-  font-size: 25px;
+.celsius-achive-details-pan-icon .fa-kitchen-set {
+  font-size: 30px;
 
 }
 
-.achive-details-meat-items-title {
+.celsius-details-meat-items-title {
   /* background-color: rgb(38, 0, 255); */
   font-size: 30px;
-  height: 50px;
+  height: 70px;
+
+  /* background-color: red; */
+}
+
+.celsius-details-meat-items-title strong {
+
+  position: relative;
+  left: 64px;
 }
 
 
-.rise-blocks-boxed-image-section img {
-  height: 420px;
-  width: 503px;
+
+.rise-blocks-section-blocks-instance-2 {
+  height: 800px;
+  margin-top: 30px;
+
+  /* background-color: red; */
+
 }
 
 .rise-blocks-boxed-section-inner {
   display: flex;
+  justify-content: space-evenly;
+  /* background-color:blue; */
+  /* width: 1700px; */
+
   /* background-color: red; */
 }
 
-.rise-blocks-section-blocks-instance-2 {
-  height: 405px;
-  margin-top: 30px;
-  width: 1300px;
-  /* background-color: blue; */
+.rise-blocks-boxed-image-section {
+  /* width: 1300px; */
+  width: 1000px;
+
+  /* background-color: black; */
+}
+
+.rise-blocks-boxed-image-section img {
+  height: 700px;
+  width: 950px;
+  position: relative;
+  left: 30px;
 }
 
 .rise-blocks-boxed-title-section {
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 20px;
+  left: 10px;
+  /* right: 200px; */
+  /* width: 600px; */
+  /* flex: 1; */
+  width: 920px;
 }
 
 .rise-blocks-boxed-subtitle-section {
-  margin-left: 45px;
-  width: 483px;
+  width: 750px;
 }
 
 .rise-blocks-boxed-subtitle-section strong {
-  font-size: 20px;
+  font-size: 31px;
 }
 
 .rise-blocks-boxed-subtitle-section p {
-  line-height: 27px;
-  margin-top: 15px;
+  line-height: 45px;
+  position: relative;
+  top: 20px;
+
+  font-size: 24px;
 }
 
 .rise-blocks-boxed-button-section {
   background-color: #222;
-  margin-left: 45px;
-  margin-top: 48px;
-  height: 43px;
-  width: 209px;
+  /* margin-left: 45px; */
+  /* margin-top: 48px; */
+  position: relative;
+  top: 98px;
+  height: 55px;
+  width: 260px;
   text-align: center;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -563,51 +589,62 @@ section {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  font-size: 12px;
-  margin-top: 12px;
+  font-size: 14px;
+  margin-top: 18px;
   color: white;
 
 }
 
 .rise-blocks-section-block-instance-3 {
-  height: 405px;
-  margin-top: 70px;
-  width: 1300px;
+  height: 800px;
+  margin-top: 30px;
+  /* background-color: black; */
+
   /* background-color: red; */
 }
 
 .rise-blocks-boxed-section-inner-2 {
   display: flex;
+  /* background-color: red; */
+}
+
+.rise-blocks-boxed-image-section-1 {
+  width: 1000px;
 }
 
 .rise-blocks-boxed-image-section-1 img {
-  height: 420px;
-  width: 503px;
-  margin-left: 30px;
-
+  height: 700px;
+  width: 920px;
+  position: relative;
+  left: 30px;
 }
 
 .rise-blocks-boxed-title-section-1 {
   display: flex;
   flex-direction: column;
-  width: 483px;
+  width: 820px;
+  position: relative;
+  left: 21px;
 }
 
 .rise-blocks-boxed-title-section-1 strong {
-  font-size: 20px;
+  font-size: 31px;
 }
 
 .rise-blocks-boxed-title-section-1 p {
-  line-height: 27px;
-  margin-top: 15px;
+  line-height: 50px;
+  position: relative;
+  top: 20px;
+
+  font-size: 24px;
 }
 
 .rise-blocks-boxed-button-section1 {
-  background-color: #222;
-  margin-left: 5px;
-  margin-top: 48px;
-  height: 43px;
-  width: 209px;
+  position: relative;
+  background-color: black;
+  top: 80px;
+  height: 55px;
+  width: 260px;
   text-align: center;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -619,8 +656,8 @@ section {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  font-size: 12px;
-  margin-top: 12px;
+  font-size: 14px;
+  margin-top: 15px;
   color: white;
 
 }
@@ -630,11 +667,11 @@ section {
   margin-top: 90px;
   padding: 15px 0 10px;
   border-top: 1px solid #eee;
+  /* border-radius: 2px solid red; */
+  /* background-color: red; */
 }
 
-.celsius-cooking-container1 {
-  max-width: 1140px;
-}
+
 
 .celsius-cooking-widget-wrapper {
   color: #fff;
@@ -647,23 +684,44 @@ section {
   align-items: center;
 }
 
+.wp-container-7 img {
+  height: 60px;
+  width: 120px;
+}
+
 .wp-container-8 img {
   height: 60px;
   width: 120px;
-  margin-left: 10px;
-
+  margin-left: 20px;
+  height: 90px;
+  width: 200px;
 }
 
 .nav-menu-2 {
   margin-top: 10px;
+  /* background-color: red; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #menu-footer-menu {
-  max-width: 800px;
-  margin-left: 190px;
+  width: 1000px;
   display: flex;
+  position: relative;
+  top: 20px;
+  /* background-color: black; */
   justify-content: space-evenly;
-  align-items: center;
+  height: 50px;
+}
+
+.menu-item-1 a {
+  font-size: 25px;
+  /* list-style: none; */
+  text-decoration: none;
+  color: black;
+
 }
 
 .celsius-cooking-footer-copyright-text {
@@ -671,5 +729,12 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  position: relative;
+  top: 20px;
+  height: 50px;
+  font-size: 25px;
+  /* margin-top: 10px; */
 }
+
+
+
