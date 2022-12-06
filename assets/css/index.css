@@ -122,7 +122,8 @@ li {
 
 
 }
-.fa-earth-asia{
+
+.fa-earth-asia {
   font-size: 30px;
 }
 
@@ -145,10 +146,12 @@ li {
   font-size: 16px;
 
 }
-.celsius-header-search-icon{
+
+.celsius-header-search-icon {
   font-size: 30px;
 }
-.celsius-header-heart-icon .fa-heart{
+
+.celsius-header-heart-icon .fa-heart {
   font-size: 30px;
 }
 
@@ -735,6 +738,3 @@ li {
   font-size: 25px;
   /* margin-top: 10px; */
 }
-
-
-
