@@ -4,21 +4,14 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
 .celsius-container {
   padding-left: 120px;
 }
-
-
 
 .celsius-overlay {
   display: flex;
   height: 100px;
   align-items: center;
-  /* border: 2px solid red; */
 
 }
 
@@ -27,13 +20,12 @@
 
 }
 
-
 .celsius-cooking-navbar {
 
   display: flex;
   flex-direction: column;
   flex: 2.5;
-  /* border: 2px solid black; */
+
 
 
 }
@@ -49,12 +41,14 @@
 
 .celsius-cooking-navbar-items a {
   text-decoration: none;
-  color: black;
+  color: #3F3F3F;
   font-size: 1.1em;
 
 }
-.celsius-cooking-site-branding{
-  width: 200px;
+
+.celsius-cooking-site-branding {
+  flex: 0.5;
+  
 }
 
 .celsius-cooking-navbar-items a::after {
@@ -91,6 +85,7 @@
 
 #primary-id-items2 {
   display: none;
+
 }
 
 
@@ -98,15 +93,16 @@
   display: flex;
 
 
+
 }
 
 .celsius-searchIcons-form .searchIcons-Box {
-  width:84em;
+  width: 94%;
   height: 38px;
   border-top: 2px;
- /* background-color: red; */
+  
   border: 2px solid black;
-  /* border-right: none; */
+ 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -117,19 +113,20 @@
 
 .celsius-searchIcons-form .searchIcons-Box::placeholder {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 1.1em;
   color: black;
   margin-left: 20px;
   padding: 5px;
-  /* border: none; */
+ 
 
 }
-searchIcons-box button{
+
+searchIcons-box button {
   background-color: red;
 }
 
 .searchIcons-box .fa-search {
-  font-size:1.5em;
+  font-size: 1.5em;
   height: 100%;
   width: 100%;
   position: relative;
@@ -155,7 +152,7 @@ textarea:focus, input:focus {
 }
 
 .celsius-header-right {
- /* border: 2px solid yellow; */
+ 
   flex: 1;
   align-items: center;
 
@@ -267,34 +264,23 @@ textarea:focus, input:focus {
 .celsius-cooking-banner-wrapper {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Images/Banner.jpg');
-  height: 800px;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+
+  padding: 80px 0;
 }
 
 .celsius-cooking-banner-content-inner {
-  position: relative;
-  z-index: 99;
-  text-align: center;
-  padding: 80px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  border: 2px solid red;
 }
 
 .celsius-cooking-banner-content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  height: 500px;
+
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,31 +288,31 @@ textarea:focus, input:focus {
 }
 
 .celsius-cooking-banner-content h1 {
-  color: white;
-  font-size: 51px;
+  color: #ffffff;
+  font-size: 3.3em;
 }
 
 .celsius-banner-search {
   border-radius: none;
-  max-width: 600px;
   margin: 15px auto 0;
   display: flex;
-  border: none;
-  position: relative;
-  top: 25px;
+  margin-top: 3em;
+
+  width: 46em;
+
+
 }
 
 .celsius-banner-form {
-  height: 50px;
-  width: 500px;
+  width: 100%;
   border: none;
 
 }
 
 .search-field {
   border: none;
-  height: 44px;
-  width: 500px;
+  height: 4em;
+  width: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -338,7 +324,7 @@ textarea:focus, input:focus {
 }
 
 .search-submit {
-  height: 44px;
+  height: 4em;
   width: 50px;
   background-color: black;
   border-top-right-radius: 50px 100px;
@@ -347,27 +333,27 @@ textarea:focus, input:focus {
 
 .fa-magnifying-glass {
   color: white;
+  font-size: 1.6em;
 }
 
 .celsius-banner-button {
   position: relative;
-  left: -90px;
-  top: 10px;
-  margin-top: 20px;
-  height: 40px;
-  width: 400px;
-  margin-left: 20px;
+  left: -12.2em;
+  top: 0.8em;
+  height: 3em;
+  width: 25em;
   display: flex;
+  justify-content: space-evenly;
+
 }
 
 .celsius-banner-button button {
-  height: 30px;
-  width: 90px;
+  height: 100%;
+  width: 7em;
   background-color: #ffffff;
   border-radius: 2px;
   border-radius: 10px;
   border: none;
-  margin-left: 10px;
   color: black;
   font-size: 12px;
 
@@ -377,21 +363,21 @@ textarea:focus, input:focus {
 .celsius-search-item-wrap-main-section {
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid rgb(0, 255, 21); */
+
 
 }
 
 
 .celsius-search-item-wrap-first-items {
-  height: 750px;
-
-  width: 20vw;
+  height: 38em;
+  width: 22vw;
+  /* border: 2px solid black; */
 }
 
 
 
 .celsius-archive-items img {
-  height: 400px;
+  height: 22em;
   width: 100%
 }
 
@@ -407,7 +393,7 @@ textarea:focus, input:focus {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  font-size: 28px;
+  font-size: 1.6em;
 }
 
 .celsius-achive-details-title button .fa-heart {
@@ -416,7 +402,7 @@ textarea:focus, input:focus {
 
 .celsius-achive-details-title span {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.2em;
   margin-top: 0.5em;
 }
 
@@ -427,7 +413,7 @@ textarea:focus, input:focus {
 }
 
 .celsius-achive-details-paragraph p {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .celsius-achive-details-icons {
@@ -436,13 +422,13 @@ textarea:focus, input:focus {
 }
 
 .celsius-achive-details-icons .fa-clock {
-  font-size: 27px;
+  font-size: 1.1em;
 }
 
 
 .celsius-achive-details-icons p {
   margin-left: 15px;
-  font-size: 20px;
+  font-size: 1em;
 
 }
 
@@ -459,7 +445,7 @@ textarea:focus, input:focus {
 }
 
 .celsius-achive-details-pan-icon .fa-kitchen-set {
-  font-size: 40px;
+  font-size: 2em;
 
 }
 
@@ -467,24 +453,11 @@ textarea:focus, input:focus {
 
   font-size: 32px;
   height: 70px;
-  /* background-color: red; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .celsius-blocks-section-inner {
 
@@ -511,24 +484,26 @@ textarea:focus, input:focus {
 }
 
 .celsius-blocks-section-blocks-instance-2 {
-  height: 800px;
+  height: 40em;
   margin-top: 30px;
 }
 
 .celsius-blocks-boxed-section-inner {
   display: flex;
 
-  border: 2px solid rgb(102, 101, 101);
-
+  height: 30em;
 }
 
 .celsius-blocks-boxed-image-section {
-  width: 850px;
+  flex: 1;
+
+  height: 100%;
 }
 
 .celsius-blocks-boxed-image-section img {
-  height: 700px;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 
 
 }
@@ -536,32 +511,45 @@ textarea:focus, input:focus {
 .celsius-blocks-boxed-title-section {
   display: flex;
   flex-direction: column;
-  width: 800px;
 
-  padding: 20px;
-  margin-left: 40px;
+  flex: 1;
+  justify-content: space-between;
+
+  padding-left: 1.1em;
+  padding-top: 1.3em;
+
+  height: 30em;
 }
 
 
 .celsius-blocks-boxed-subtitle-section strong {
-  font-size: 30px;
+  font-size: 1.7em;
   font-weight: bold;
+  color: #3F3F3F;
+
+
 }
 
 .celsius-blocks-boxed-subtitle-section p {
-  line-height: 40px;
-  margin-top: 10px;
+  line-height: 1.6em;
 
-  font-size: 23px;
+  padding-right: 1.4em;
+  padding-bottom: 1em;
+  padding-top: 0.7em;
+
+  color: #3f3f3f;
+  font-size: 1.2em;
+  width: 40em;
+
 }
 
 .celsius-blocks-boxed-button-section {
   background-color: #222;
 
   position: relative;
-  top: 180px;
-  height: 55px;
-  width: 260px;
+
+  height: 2.5em;
+  width: 9.2em;
   text-align: center;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -573,8 +561,8 @@ textarea:focus, input:focus {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  font-size: 18px;
-  margin-top: 18px;
+  font-size: 14px;
+  margin-top: 15px;
   color: white;
 
 }
@@ -582,70 +570,94 @@ textarea:focus, input:focus {
 
 
 .celsius-blocks-section-block-instance-3 {
-  height: 800px;
+  height: 40em;
+  margin-top: 30px;
+  border: 2px solid red;
 
 
 }
 
 .celsius-blocks-boxed-section-inner-2 {
   display: flex;
+  height: 30em;
 
 }
 
 .celsius-blocks-boxed-image-section-1 {
-  width: 1000px;
+  flex: 1;
 
+  height: 100%;
 }
 
 .celsius-blocks-boxed-image-section-1 img {
-  height: 700px;
-  width: 90%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
 
 }
 
 .celsius-blocks-boxed-title-section-1 {
+
+
+
   display: flex;
   flex-direction: column;
-  width: 820px;
-  padding: 20px 20px 20px 0px;
 
+  flex: 1;
+  justify-content: space-between;
+
+  padding-left: 1.1em;
+  padding-top: 1.3em;
+
+  height: 30em;
+
+}
+
+.celsius-blocks-boxed-subtitle-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .celsius-blocks-boxed-title-section-1 strong {
-  font-size: 31px;
+  font-size: 1.7em;
+  font-weight: bold;
 }
 
 .celsius-blocks-boxed-title-section-1 p {
-  line-height: 40px;
-  margin-top: 30px;
+  line-height: 1.6em;
 
-  font-size: 28px;
+  padding-right: 1.4em;
+  padding-bottom: 1em;
+  padding-top: 0.7em;
+  color: #3f3f3f;
+  font-size: 1.2em;
+  width: 40em;
+
 }
 
 .celsius-blocks-boxed-button-section1 {
-  position: relative;
+  background-color: #222;
 
-  top: 100px;
-  height: 55px;
-  width: 260px;
+  position: relative;
+  height: 2.5em;
+  width: 9.2em;
   text-align: center;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-  background-color: #000;
 }
 
 .celsius-blocks-boxed-button-section1 button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  font-size: 17px;
-  margin-top: 16px;
+  font-size: 14px;
+  margin-top: 15px;
   color: white;
 
 }
-
 
 .celsius-cooking-footer-area-wrapper {
   margin-top: 90px;
