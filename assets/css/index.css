@@ -18,6 +18,7 @@
   display: flex;
   height: 100px;
   align-items: center;
+  /* border: 2px solid red; */
 
 }
 
@@ -26,16 +27,13 @@
 
 }
 
-.celsius-cooking-site-branding {
-
-  flex: 1;
-}
 
 .celsius-cooking-navbar {
 
   display: flex;
   flex-direction: column;
-  flex: 2;
+  flex: 2.5;
+  /* border: 2px solid black; */
 
 
 }
@@ -52,8 +50,11 @@
 .celsius-cooking-navbar-items a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 1.1em;
 
+}
+.celsius-cooking-site-branding{
+  width: 200px;
 }
 
 .celsius-cooking-navbar-items a::after {
@@ -100,14 +101,16 @@
 }
 
 .celsius-searchIcons-form .searchIcons-Box {
-  width: 700px;
+  width:84em;
   height: 38px;
   border-top: 2px;
-
+ /* background-color: red; */
   border: 2px solid black;
-  border-right: none;
+  /* border-right: none; */
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
@@ -118,15 +121,20 @@
   color: black;
   margin-left: 20px;
   padding: 5px;
+  /* border: none; */
 
 }
+searchIcons-box button{
+  background-color: red;
+}
 
-.searchIcons-box-button .fa-search {
-  font-size: 20px;
+.searchIcons-box .fa-search {
+  font-size:1.5em;
   height: 100%;
   width: 100%;
   position: relative;
   top: 8px;
+  right: 31px;
 
 }
 
@@ -147,7 +155,7 @@ textarea:focus, input:focus {
 }
 
 .celsius-header-right {
-
+ /* border: 2px solid yellow; */
   flex: 1;
   align-items: center;
 
@@ -544,14 +552,14 @@ textarea:focus, input:focus {
   line-height: 40px;
   margin-top: 10px;
 
-  font-size: 28px;
+  font-size: 23px;
 }
 
 .celsius-blocks-boxed-button-section {
   background-color: #222;
 
   position: relative;
-  top: 104px;
+  top: 180px;
   height: 55px;
   width: 260px;
   text-align: center;
@@ -617,7 +625,7 @@ textarea:focus, input:focus {
 .celsius-blocks-boxed-button-section1 {
   position: relative;
 
-  top: 85px;
+  top: 100px;
   height: 55px;
   width: 260px;
   text-align: center;
