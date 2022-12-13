@@ -2,10 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+body{
+   font-family: 'Inter', sans-serif;
+  /* font-weight: 400;  */
 }
 .celsius-container {
   padding-left: 120px;
+}
+.celsius-containers{
+  padding-left: 100px;
 }
 
 .celsius-overlay {
@@ -43,6 +50,9 @@
   text-decoration: none;
   color: #3F3F3F;
   font-size: 1.1em;
+  font-family: 'Inter', sans-serif;
+
+
 
 }
 
@@ -100,7 +110,7 @@
   width: 94%;
   height: 38px;
   border-top: 2px;
-  
+  padding-left: 15px;
   border: 2px solid black;
  
   border-top-left-radius: 10px;
@@ -115,8 +125,8 @@
   font-family: "Inter", sans-serif;
   font-size: 1.1em;
   color: black;
-  margin-left: 20px;
-  padding: 5px;
+  /* margin-left: 20px; */
+  /* padding: 5px; */
  
 
 }
@@ -144,10 +154,16 @@ searchIcons-box button {
   border-bottom-right-radius: 10px;
 }
 
+.searchbox-icons button{
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
 
 textarea:focus, input:focus {
   outline: none;
-  font-size: 20px;
+  /* margin-left: 20px; */
+  /* font-size: 20px; */
 
 }
 
@@ -225,17 +241,20 @@ textarea:focus, input:focus {
   font-size: 25px;
 }
 
-.celsius-header-heart-icon, button {
+.celsius-header-heart-icon button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
 
 }
 
-.celsius-header-close-icon, button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
+.celsius-header-close-icons button {
+  background-color: black;
+  color: white;
+  /* background-repeat: no-repeat; */
+  border-radius: 50%;
+  height: 2.1em;
+  width: 2.1em;
 
 }
 
@@ -250,6 +269,11 @@ textarea:focus, input:focus {
 .celsius-header-search-icons {
   display: flex;
   flex-direction: column;
+}
+#celsius-header-search-icons button{
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
 }
 
 .celsius-dropdown button {
@@ -315,12 +339,13 @@ textarea:focus, input:focus {
   width: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  padding-left: 15px;
 }
 
 .search-field::placeholder {
-  position: relative;
+  
   color: black;
-  left: 15px;
+  
 }
 
 .search-submit {
@@ -338,51 +363,50 @@ textarea:focus, input:focus {
 
 .celsius-banner-button {
   position: relative;
-  left: -12.2em;
+  left: -13.1em;
   top: 0.8em;
-  height: 3em;
-  width: 25em;
+  height: 2.6em;
+  width: 21em;
   display: flex;
   justify-content: space-evenly;
-
+ 
 }
 
 .celsius-banner-button button {
   height: 100%;
-  width: 7em;
+  width: 8em;
   background-color: #ffffff;
   border-radius: 2px;
   border-radius: 10px;
   border: none;
-  color: black;
   font-size: 12px;
-
+}
+.celsius-banner-button button a{
+  list-style: none;
+  color: black;
+  text-decoration: none;
 
 }
 
 .celsius-search-item-wrap-main-section {
   display: flex;
   justify-content: space-between;
-
+ flex-wrap: wrap;
 
 }
-
-
-.celsius-search-item-wrap-first-items {
-  height: 38em;
-  width: 22vw;
-  /* border: 2px solid black; */
-}
-
 
 
 .celsius-archive-items img {
-  height: 22em;
-  width: 100%
+  height: 20em;
+  width: 22vw;
+  padding: 1em 1em;
+}
+.celsius-achive-details{
+  counter-reset: #3f3f3f;
 }
 
-
 .celsius-achive-details-title {
+  padding: 0em 1em;
 
   display: flex;
   justify-content: space-between;
@@ -398,6 +422,7 @@ textarea:focus, input:focus {
 
 .celsius-achive-details-title button .fa-heart {
   color: red;
+  
 }
 
 .celsius-achive-details-title span {
@@ -408,17 +433,21 @@ textarea:focus, input:focus {
 
 .celsius-achive-details-paragraph {
   margin-top: 10px;
-  font-family: "Inter", sans-serif;
-
+  padding-left: 1em;
+   
 }
 
 .celsius-achive-details-paragraph p {
-  font-size: 1em;
+  font-size: 0.89em;
+  line-height: 1.4;
+  font-family: "Inter", sans-serif;
+
 }
 
 .celsius-achive-details-icons {
   display: flex;
   margin-top: 10px;
+  padding-left: 1em;
 }
 
 .celsius-achive-details-icons .fa-clock {
@@ -428,8 +457,8 @@ textarea:focus, input:focus {
 
 .celsius-achive-details-icons p {
   margin-left: 15px;
-  font-size: 1em;
-
+  font-family: 'Inter', sans-serif;
+   
 }
 
 .fa-utensils {
@@ -439,8 +468,8 @@ textarea:focus, input:focus {
 .celsius-achive-details-pan-icon {
   margin-top: 20px;
   display: flex;
-
-  width: 25%;
+ padding-left: 1em;
+  width: 30%;
   justify-content: space-between;
 }
 
@@ -453,7 +482,7 @@ textarea:focus, input:focus {
 
   font-size: 32px;
   height: 70px;
-
+ margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,25 +513,26 @@ textarea:focus, input:focus {
 }
 
 .celsius-blocks-section-blocks-instance-2 {
-  height: 40em;
-  margin-top: 30px;
+  /* height: 40em; */
+  margin-top: 100px;
 }
 
 .celsius-blocks-boxed-section-inner {
   display: flex;
 
-  height: 30em;
+  /* height: 30em; */
 }
 
 .celsius-blocks-boxed-image-section {
   flex: 1;
 
-  height: 100%;
+  /* height: 100%; */
 }
 
 .celsius-blocks-boxed-image-section img {
   height: 100%;
   width: 100%;
+  padding: 2px 2px 2px 2px;
   object-fit: cover;
 
 
@@ -518,7 +548,7 @@ textarea:focus, input:focus {
   padding-left: 1.1em;
   padding-top: 1.3em;
 
-  height: 30em;
+  /* height: 30em; */
 }
 
 
@@ -531,7 +561,7 @@ textarea:focus, input:focus {
 }
 
 .celsius-blocks-boxed-subtitle-section p {
-  line-height: 1.6em;
+  line-height: 1.7;
 
   padding-right: 1.4em;
   padding-bottom: 1em;
@@ -546,10 +576,10 @@ textarea:focus, input:focus {
 .celsius-blocks-boxed-button-section {
   background-color: #222;
 
-  position: relative;
+  /* position: relative; */
 
-  height: 2.5em;
-  width: 9.2em;
+  height: 3em;
+  width: 11em;
   text-align: center;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -570,30 +600,30 @@ textarea:focus, input:focus {
 
 
 .celsius-blocks-section-block-instance-3 {
-  height: 40em;
-  margin-top: 30px;
-  border: 2px solid red;
+  /* height: 40em; */
+  margin-top: 80px;
+  /* border: 2px solid red; */
 
 
 }
 
 .celsius-blocks-boxed-section-inner-2 {
   display: flex;
-  height: 30em;
+  /* height: 30em; */
 
 }
 
 .celsius-blocks-boxed-image-section-1 {
   flex: 1;
 
-  height: 100%;
+  /* height: 100%; */
 }
 
 .celsius-blocks-boxed-image-section-1 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
+ padding: 2px 6px 2px 2px;
 
 }
 
@@ -610,7 +640,7 @@ textarea:focus, input:focus {
   padding-left: 1.1em;
   padding-top: 1.3em;
 
-  height: 30em;
+  /* height: 30em; */
 
 }
 
@@ -625,7 +655,7 @@ textarea:focus, input:focus {
 }
 
 .celsius-blocks-boxed-title-section-1 p {
-  line-height: 1.6em;
+  line-height: 1.7;
 
   padding-right: 1.4em;
   padding-bottom: 1em;
@@ -639,9 +669,9 @@ textarea:focus, input:focus {
 .celsius-blocks-boxed-button-section1 {
   background-color: #222;
 
-  position: relative;
-  height: 2.5em;
-  width: 9.2em;
+  
+  height: 3em;
+  width: 11em;
   text-align: center;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -682,6 +712,8 @@ textarea:focus, input:focus {
 .wp-container-7 img {
   height: 60px;
   width: 120px;
+  padding: 16px 13px 16px 8px;
+
 }
 
 .wp-container-8 img {
@@ -690,6 +722,7 @@ textarea:focus, input:focus {
   margin-left: 20px;
   height: 90px;
   width: 200px;
+  padding: 16px 21px 15px 13px;
 }
 
 .nav-menu-2 {
@@ -712,7 +745,8 @@ textarea:focus, input:focus {
 }
 
 .menu-item-1 a {
-  font-size: 25px;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
 
   text-decoration: none;
   color: black;
@@ -727,6 +761,8 @@ textarea:focus, input:focus {
   position: relative;
   top: 20px;
   height: 50px;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+
 
 }
