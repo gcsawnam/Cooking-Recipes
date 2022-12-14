@@ -33,7 +33,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  flex: 2.5;
+  flex: 2.0;
 
 
 
@@ -167,30 +167,31 @@ textarea:focus, input:focus {
 }
 
 .celsius-header-right {
-
+ /* border: 2px solid black; */
   flex: 1;
   align-items: center;
-
-
   justify-content: space-evenly;
 
 }
 
 .celsius-header-right-items {
   display: flex;
-  width: 60%;
-  padding-left: 5%;
+  width: 50%;
+  /* padding-left: 5%; */
   justify-content: space-evenly;
+  /* align-items: center; */
+  /* border: 2px solid red; */
 
 }
 
 .celsius-dropdown {
   float: left;
   overflow: hidden;
+  /* border: 2px solid black; */
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size:25px;
   border: none;
   outline: none;
 
@@ -231,19 +232,26 @@ textarea:focus, input:focus {
 .celsius-dropdown:hover .dropdown-content {
   display: block;
 }
-
-.celsius-header-search-icon {
-  font-size: 25px;
+.celsius-header-search-icons button{
+  height: 2.1em;
+  width: 2.1em;
 }
 
-.celsius-header-heart-icon .fa-heart {
+.celsius-header-search-icons .fa-search{
   font-size: 25px;
+
+}
+
+.celsius-header-heart-icon button .fa-heart {
+  font-size:26px;
 }
 
 .celsius-header-heart-icon button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
+  /* border: 2px solid red; */
+
 
 }
 
@@ -254,15 +262,17 @@ textarea:focus, input:focus {
   border-radius: 50%;
   height: 2.1em;
   width: 2.1em;
+  /* border: 2px solid red; */
 
 }
 
 #celsius-header-close-icons {
   display: none;
+  /* border: 2px solid red; */
 }
 
-.celsius-header-close-icons .fa-xmark {
-  font-size: 25px;
+#celsius-header-close-icons .fa-xmark {
+  font-size: 23px;
 }
 
 .celsius-header-search-icons {
@@ -274,6 +284,8 @@ textarea:focus, input:focus {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
+  /* border: 2px solid red; */
+
 }
 
 .celsius-dropdown button {
@@ -363,31 +375,39 @@ textarea:focus, input:focus {
 
 .celsius-banner-button {
   position: relative;
-  left: -13.1em;
+  left: -12em;
   top: 0.8em;
+  
   height: 2.6em;
-  width: 21em;
+  width: 24em;
   display: flex;
-  justify-content: space-evenly;
-
+  justify-content: space-evenly; 
+  /* border: 2px solid red; */
 }
-
-.celsius-banner-button button {
+.button-item{
   height: 100%;
-  width: 8em;
+  width: 27%;
   background-color: #ffffff;
-  border-radius: 2px;
-  border-radius: 10px;
-  border: none;
-  font-size: 12px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius:10px;
+ /* border: 2px solid black; */
 }
-
-.celsius-banner-button button a {
-  list-style: none;
-  color: black;
+.button-item a {
+  /* border-radius: 2px;
+  border-radius: 10px; */
+  /* border:2px solid red; */
+  font-size: 13px;
   text-decoration: none;
+  position: relative;
+  left: 28px;
+  top: 9px;
+  color: black; 
+
 
 }
+
 
 .celsius-search-item-wrap-main-section {
   display: flex;
@@ -398,20 +418,23 @@ textarea:focus, input:focus {
 
 
 .celsius-archive-items img {
-  height: 20em;
-  width: 22vw;
+  height: 17;
+  width: 20vw;
   padding: 1em 1em;
 }
 
-.celsius-achive-details {
-  counter-reset: #3f3f3f;
-}
 
-.celsius-achive-details-title {
+.celsius-achive-details-title{
   padding: 0em 1em;
-
+max-width: 20vw;
+  
   display: flex;
   justify-content: space-between;
+}
+.celsius-achive-details-title a{
+  text-decoration: none;
+  color: #3f3f3f;
+
 }
 
 
@@ -437,7 +460,10 @@ textarea:focus, input:focus {
 .celsius-achive-details-paragraph {
   margin-top: 10px;
   padding-left: 1em;
+ /* max-width: 300px; */
+max-width: 20vw;
 
+ background-origin: 2px solid red;
 }
 
 .celsius-achive-details-paragraph p {
@@ -452,6 +478,8 @@ textarea:focus, input:focus {
   display: flex;
   margin-top: 10px;
   padding-left: 1em;
+max-width: 20vw;
+
 }
 
 .celsius-achive-details-icons .fa-clock {
@@ -468,6 +496,7 @@ textarea:focus, input:focus {
 
 .fa-utensils {
   margin-left: 20px;
+  color: #3f3f3f;
 }
 
 .celsius-achive-details-pan-icon {
