@@ -61,17 +61,20 @@
 .slick-next.slick-disabled:before
 {
     opacity: .25;
+    
 }
 
 .slick-prev:before,
 .slick-next:before
 {
+    /* font-size: 75px; */
+   
     font-family: 'slick';
-    font-size: 20px;
+    /* font-size: 16px; */
     line-height: 1;
 
-    opacity: .75;
-    color: white;
+    /* opacity: .75; */
+    color:white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -178,7 +181,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 25px;
     line-height: 20px;
 
     position: absolute;
@@ -201,4 +204,13 @@
 {
     opacity: .75;
     color: black;
+}
+
+
+.homeslider{
+    display: flex;
+}
+.homeslider img{
+    height: 100px;
+    width: 209px;
 }

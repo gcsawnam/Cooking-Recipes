@@ -1,4 +1,17 @@
 /* Slider */
+.homeslider{
+    /* background-color: darkgray; */
+    margin: 200px;
+
+}
+.slide{
+    height: 50%;
+    width: 50%;
+}
+img{
+    height:40%;
+    width: 40%;
+}
 .slick-slider
 {
     position: relative;
@@ -117,3 +130,8 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+
+
+
