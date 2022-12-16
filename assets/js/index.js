@@ -17,11 +17,14 @@ $(document).ready(function () {
   $(".celsius-search-item-wrap-main-section").slick({
     infinite: true,
     speed: 300,
+    prevArrow:'.previous-arrow-right',
     nextArrow:'.next-right-icons',
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
   });
+
+
   $(".celsius-search-second-item-wrap-main-section").slick({
     infinite: true,
     speed: 300,

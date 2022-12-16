@@ -416,9 +416,9 @@ textarea:focus, input:focus {
   flex-wrap: wrap;
 
 }
-.celsius-search-item-wrap-main-section ~ .next-right-icons{
-  display: block;
-}
+
+
+
 
 
 .celsius-search-second-item-wrap-main-section{
@@ -493,7 +493,7 @@ max-width: 25vw;
   display: flex;
   margin-top: 10px;
   padding-left: 1em;
-max-width: 20vw;
+max-width: 25vw;
 
 }
 
@@ -528,9 +528,8 @@ max-width: 20vw;
 
 
 } 
-
 .next-right-icons{
-  display: none;
+  display: none !important;
 background-color: white;
   border-radius: 50%;
   float: right;
@@ -539,26 +538,87 @@ background-color: white;
   position: relative;
   top: -300px;
   right: 100px;
-  /* border: 2px solid red; */
+  
+}
+.next-right-icons .fa-angle-right{
+  font-size: 29px;
+  position: relative;
+  top: 12px;
+  left: 20px;
+  
+  }
+
+  .next-right-icons:hover,.next-arrow-2-right:hover,.previous-arrow-right:hover{
+    background-color: #000;
+    color: white;
+  }
+  .next-right-icons:hover ~.next-right-icons{
+    display: block !important;
+  }
+
+
+
+
+
+.celsius-search-item-wrap-main-section:hover ~.next-right-icons,
+.celsius-search-item-wrap-main-section:hover ~.previous-arrow-right,
+.next-right-icons:hover ~.next-right-icons{
+  display: block !important;
 }
 
 
-.next-right-icons:hover,.next-arrow-2-right:hover{
-  background-color: #000;
-  color: white;
+
+.previous-arrow-right{
+  display: none !important;
+  background-color: white;
+    border-radius: 50%;
+    
+    height: 55px;
+    width: 55px;
+    position: relative;
+    top: -312px;
+    left: 218px;
+}
+
+.previous-arrow-right .fa-angle-left{
+  font-size: 29px;
+  position: relative;
+  top: 12px;
+  left: 20px;
+  
+  }
+ 
+
+
+
+
+
+
+.next-arrow-2-right{
+  display: none !important;
+  background-color: hwb(0 96% 2%);
+    border-radius: 50%;
+    float: right;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    top: -300px;
+    right: 100px;
+}
+
+.celsius-search-second-item-wrap-main-section:hover ~ .next-arrow-2-right{
+  display: block !important;
 }
 
 
-.next-right-icons .fa-angle-right, .next-arrow-2-right  .fa-angle-right{
-font-size: 29px;
+
+
+.next-arrow-2-right  .fa-angle-right{
+  font-size: 29px;
 position: relative;
 top: 12px;
 left: 20px;
-
 }
-
-
-
 
 
 
