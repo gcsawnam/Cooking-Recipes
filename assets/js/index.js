@@ -17,19 +17,27 @@ $(document).ready(function () {
   $(".celsius-search-item-wrap-main-section").slick({
     infinite: true,
     speed: 300,
-    arrows: true,
-    // prevArrow: '.previous-arrow',
-    nextArrow:'.previous-arrow-right',
+    nextArrow:'.next-right-icons',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+  });
+  $(".celsius-search-second-item-wrap-main-section").slick({
+    infinite: true,
+    speed: 300,
+    nextArrow:'.next-arrow-2-right',
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
   });
 });
 
-$(document).ready(function () {
-  $(".celsius-search-item-wrap-main-section,.previous-arrow-right").hover(function () {
-    $('.previous-arrow-right').css('display','block');
-  }, function () {
-    $('.previous-arrow-right').hide();
-  });
-});
+// $(document).ready(function () {
+//   $(".celsius-search-item-wrap-main-section,.-arrow-right").hover(function () {
+//     $('.next-arrow-right').show();
+//   }, function () {
+//     $('.next-arrow-right').hide();
+//   });
+// });
+
+

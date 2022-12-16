@@ -4,6 +4,7 @@
     margin: 200px;
 
 }
+
 .slide{
     height: 50%;
     width: 50%;
@@ -12,11 +13,12 @@ img{
     height:40%;
     width: 40%;
 }
+
 .slick-slider
 {
     position: relative;
 
-    display: block;
+    /* display: block; */
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -35,7 +37,7 @@ img{
 {
     position: relative;
 
-    display: block;
+    /* display: block; */
     overflow: hidden;
 
     margin: 0;
@@ -130,8 +132,5 @@ img{
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-
-
 
 
