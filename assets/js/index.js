@@ -22,6 +22,8 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
+    // arrows : false,
+
   });
 
 
@@ -29,6 +31,8 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
     nextArrow:'.next-arrow-2-right',
+    prevArrow:'.previous-arrow-2-left',
+
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
