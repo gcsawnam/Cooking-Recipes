@@ -17,8 +17,7 @@ $(document).ready(function () {
   $(".celsius-search-item-wrap-main-section").slick({
     infinite: true,
     speed: 300,
-    prevArrow:'.previous-arrow-right',
-    nextArrow:'.next-right-icons',
+   arrows:true,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
@@ -30,8 +29,7 @@ $(document).ready(function () {
   $(".celsius-search-second-item-wrap-main-section").slick({
     infinite: true,
     speed: 300,
-    nextArrow:'.next-arrow-2-right',
-    prevArrow:'.previous-arrow-2-left',
+   arrows:true,
 
     slidesToShow: 3,
     slidesToScroll: 1,

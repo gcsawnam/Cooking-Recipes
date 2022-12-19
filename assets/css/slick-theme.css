@@ -16,17 +16,16 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
-.slick-prev,
-.slick-next
+.slick-prev
 {
     font-size: 0;
     line-height: 0;
 
     position: absolute;
-    top: 50%;
-
-    display: none;
-
+    top: 45%;
+    left:8%;
+    z-index: 3;
+    /* display: none; */
     width: 20px;
     height: 20px;
     padding: 0;
@@ -41,6 +40,30 @@
     outline: none;
     background: transparent;
 }
+
+.slick-next{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 45%;
+    left:85%;
+    z-index: 3;
+    /* display: none; */
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent; 
+}
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -49,6 +72,7 @@
     color: transparent;
     outline: none;
     background: transparent;
+    /* display: block !important; */
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -56,6 +80,7 @@
 .slick-next:focus:before
 {
     opacity: 1;
+    /* display: block !important; */
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -64,25 +89,56 @@
     
 }
 
+
+.slick-prev:before {
+    color:black !important;
+    background-color: #eee;
+    border: 2px solid red;
+    width: 15px;
+    height: 15px;
+  }
+  .slick-next:before {
+    color:black !important;
+    background-color: #eee;
+
+  }
+
+
+
+
+
+
+
+
+
+
 .slick-prev:before,
 .slick-next:before
 {
-    /* font-size: 75px; */
-   
+    /* display: none; */
     font-family: 'slick';
-    /* font-size: 16px; */
+   
     line-height: 1;
 
-    /* opacity: .75; */
-    color:white;
+    opacity: 1;
+    
+    color: black;
+    
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.slick-arrow:hover 
+.slick-prev{
+    color: white;
+}
+
+
+
 
 .slick-prev
 {
-    left: -25px;
+    /* left: 0px; */
 }
 [dir='rtl'] .slick-prev
 {
@@ -92,6 +148,9 @@
 .slick-prev:before
 {
     content: '←';
+    /* color: black; */
+    border-radius: 50%;
+    font-size: 50px;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -100,7 +159,7 @@
 
 .slick-next
 {
-    right: -25px;
+    /* right: -25px; */
 }
 [dir='rtl'] .slick-next
 {
@@ -110,6 +169,10 @@
 .slick-next:before
 {
     content: '→';
+    /* background-color: black; */
+    border-radius: 50%;
+    font-size: 50px;
+    
 }
 [dir='rtl'] .slick-next:before
 {
@@ -214,3 +277,16 @@
     height: 100px;
     width: 209px;
 }
+
+.slick-slider
+    .slick-arrow{
+        display:none !important;
+    }
+
+.slick-slider:hover 
+        .slick-arrow{
+            display:block !important;
+        }
+   
+
+
