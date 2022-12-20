@@ -137,6 +137,7 @@ border: none;
     content: '\3e';
 }
 
+
 [dir='rtl'] .slick-next
 {
     right: auto;
@@ -250,13 +251,11 @@ border: none;
 
 .slick-slider
     .slick-arrow{
-        display:none !important;
+        display: none !important;
     }
 
-.slick-slider:hover 
+    
+ .slick-slider:hover 
         .slick-arrow{
             display:block !important;
-        }
-   
-
-
+        } 
