@@ -478,7 +478,7 @@ max-width: 26vw;
 .celsius-achive-details-paragraph {
   margin-top: 10px;
   padding-left: 1em;
- /* max-width: 300px; */
+ 
 max-width: 25vw;
 
  background-origin: 2px solid red;
@@ -530,12 +530,6 @@ max-width: 25vw;
   color: #3F3F3F;
 
 } 
-
-
-
-
-
-
 
 .celsius-details-meat-items-title {
 

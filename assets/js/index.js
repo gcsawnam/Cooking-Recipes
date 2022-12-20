@@ -21,7 +21,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    // arrows : false,
+    
 
   });
 
@@ -36,13 +36,5 @@ $(document).ready(function () {
     centerMode: true,
   });
 });
-
-// $(document).ready(function () {
-//   $(".celsius-search-item-wrap-main-section,.-arrow-right").hover(function () {
-//     $('.next-arrow-right').show();
-//   }, function () {
-//     $('.next-arrow-right').hide();
-//   });
-// });
 
 
