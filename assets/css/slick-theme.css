@@ -80,8 +80,8 @@
 .slick-next:focus:before
 {
     opacity: 1;
-    /* color: red !important; */
-    /* background-color:yellow; */
+    color: red !important;
+    background-color:white;
     /* display: block !important; */
 }
 .slick-prev.slick-disabled:before,
