@@ -18,6 +18,7 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
    arrows:true,
+
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
