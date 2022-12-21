@@ -2,12 +2,13 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    /* background: #fff url('./ajax-loader.gif') center center no-repeat; */
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
 
-   
+
+
 
 
 
@@ -17,7 +18,7 @@
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome';
     src: url('path/to/font-awesome.woff2') format('woff2');
 
 
@@ -25,11 +26,26 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
+
+ .slick-disabled{
+    opacity: 0 !important;
+    display: none !important;
+}
+
+
+
 .slick-prev
 {
+
+    background-image: url('../Images/bx-chevron-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+     
+
+
     font-size: 0;
     line-height: 0;
-
+   
     position: absolute;
     top: 45%;
     left:8%;
@@ -44,10 +60,15 @@
     border-radius: 50%;
      width:55px;
     height: 55px; 
-    background-color: black;
+    background-color: black !important;
 }
 
 .slick-next{
+    background-image: url('../Images/angle-right-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+
     font-size: 0;
     line-height: 0;
     position: absolute;
@@ -72,10 +93,13 @@ border-radius: 50%;
 .slick-next:hover,
 .slick-next:focus
 {
-    background-color: white;
+    background-color: rgb(241, 13, 13) !important;
+    /* color: black; */
     outline: none;
    
 }
+
+
 
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -83,36 +107,44 @@ border-radius: 50%;
 .slick-next:focus:before
 {
     opacity: 1;
-    color:black !important;
+    color:white !important;
   
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
-    opacity: .25;
+    opacity: 0;
     
 }
 
 
+
+
+[aria-disabled='true'] 
+.slick-prev {
+    /* display: none;
+     */
+     opacity: 0;
+  }
+
+
+
 .slick-prev::before {
-   
-    content: '\3c';
-    font-family: "Font Awesome 5 Free";
-   color: white !important; 
-border: none;
-    border-radius: 50%;
-   font-size: 25px;
+  
+/* border: none; */
+    /* border-radius: 50%; */
+   /* font-size: 20px; */
   }
   .slick-next:before {
-    content: '\3e';
-    font-family: "Font Awesome 5 Free";
+    /* content: '\3e';
+    font-family: "Font Awesome 5 Free"; */
 
-   color: white !important; 
+   /* color: white !important;  */
 border: none;
      
     
     border-radius: 50%;
-    font-size: 25px;
+    /* font-size: 20px; */
   }
 
 .slick-prev:before,

@@ -434,11 +434,16 @@ textarea:focus, input:focus {
 
 .celsius-archive-items{
   max-width: 25em;
+  /* border: 2px solid black; */
+
+}
+.celsius-archive-single{
+  max-width: 22em;
 
 }
 .celsius-archive-items img {
-  height: 22em;
-  width: 26vw;
+  height: 21em;
+  width: 22em;
 
   padding: 1em 1em;
 }
@@ -446,7 +451,7 @@ textarea:focus, input:focus {
 
 .celsius-achive-details-title{
   padding: 0em 1em;
-max-width: 26vw;
+  max-width: 22em;
   
   display: flex;
   justify-content: space-between;
@@ -479,7 +484,7 @@ max-width: 26vw;
   margin-top: 10px;
   padding-left: 1em;
  
-max-width: 25vw;
+max-width: 21em;
 
  background-origin: 2px solid red;
 }
@@ -501,7 +506,9 @@ max-width: 25vw;
 }
 
 .celsius-achive-details-icons .fa-clock {
-  font-size: 1.1em;
+  font-size: 1em;
+  color: #3f3f3f;
+
 }
 
 
@@ -509,11 +516,13 @@ max-width: 25vw;
   margin-left: 15px;
   font-family: 'Inter', sans-serif;
   color: #3F3F3F;
+  font-size: 0.89em;
 
 }
 
 .fa-utensils {
   margin-left: 20px;
+  font-size: 15px;
   color: #3f3f3f;
 }
 
@@ -521,13 +530,13 @@ max-width: 25vw;
   margin-top: 20px;
   display: flex;
   padding-left: 1em;
-  width: 30%;
+  width: 17%;
   justify-content: space-between;
 }
 
 .celsius-achive-details-pan-icon .fa-kitchen-set {
-  font-size: 2em;
-  color: #3F3F3F;
+  font-size: 1.5em;
+  color: #3f3f3f;
 
 } 
 
@@ -788,11 +797,11 @@ max-width: 25vw;
 }
 
 .menu-item-1 a {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Inter', sans-serif;
 
   text-decoration: none;
-  color: black;
+  color:#3f3f3f
 
 }
 
@@ -804,8 +813,11 @@ max-width: 25vw;
   position: relative;
   top: 20px;
   height: 50px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Inter', sans-serif;
+  color:#3f3f3f
 
 
 }
+
+
