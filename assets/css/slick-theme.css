@@ -157,6 +157,9 @@
     content: '\3c';
 
 }
+.slick-slide{
+    margin: 0 10px;
+}
 
 /* Dots */
 .slick-dotted.slick-slider {
