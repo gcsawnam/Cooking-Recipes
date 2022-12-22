@@ -17,23 +17,18 @@ $(document).ready(function () {
   $(".celsius-search-item-wrap-main-section").slick({
     infinite: false,
     speed: 300,
-   arrows:true,
-   slidesToShow: 4,
+    arrows: true,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: false,
-    
   });
 
   $(".celsius-search-second-item-wrap-main-section").slick({
     infinite: false,
     speed: 300,
-   arrows:true,
-
-    slidesToShow:4,
+    arrows: true,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: false,
-
-
   });
-
 });
