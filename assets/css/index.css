@@ -512,6 +512,8 @@ textarea:focus, input:focus {
 .slick-list {
   /* Show slides that would otherwise be hidden off-screen */
   overflow: visible;
+  max-width:1320px;
+
 }
 
 .slick-slider{
