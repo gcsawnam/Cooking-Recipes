@@ -34,6 +34,11 @@
 
 
 
+/* .slick-active{
+    width: 30px;
+  } */
+
+
 .slick-prev {
  background-color: white;
    font-size: 0;
@@ -79,12 +84,13 @@
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-    background-color: rgb(241, 13, 13) !important;
+    /* background-color: rgb(241, 13, 13) !important; */
     outline: none;
     color: black !important;
 
 
 }
+
 
 
 
@@ -94,6 +100,7 @@
 .slick-next:focus:before {
     opacity: 1;
     color: white !important;
+    
 
 }
 
