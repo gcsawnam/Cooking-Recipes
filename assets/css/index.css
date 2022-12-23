@@ -21,7 +21,7 @@ body {
 }
 
 .celsius-container {
-  padding: 0% 10%;
+  padding: 0% 14%;
 }
 
 .celsius-containers {
@@ -34,10 +34,13 @@ body {
 
 .celsius-overlay {
   display: flex;
-  height: 100px;
+  height: 80px;
   justify-content: center;
-
   align-items: center;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
 
 }
 
@@ -50,7 +53,8 @@ body {
 
   display: flex;
   flex-direction: column;
-  flex: 2.5;
+  flex: 2;
+  border: 2px solid red;
 
 
 
@@ -746,7 +750,7 @@ textarea:focus, input:focus {
 
 .celsius-blocks-boxed-subtitle-section1 .titles {
   font-size: 26px;
-  font-weight: 600;
+  /* font-weight: 600; */
   text-transform: inherit;
   line-height: 1.5;
   color: #3f3f3f;
