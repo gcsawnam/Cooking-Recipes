@@ -1,10 +1,8 @@
 /* Slider */
 .homeslider {
-    /* background-color: darkgray; */
-    /* margin: 200px; */
-
+     background-color: darkgray; 
+     margin: 200px;
 }
-
 .slide {
     height: 50%;
     width: 50%;
@@ -31,7 +29,7 @@ img {
 
 .slick-list {
     position: relative;
-    /* display: block; */
+    display: block;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -59,7 +57,6 @@ img {
     position: relative;
     top: 0;
     left: 0;
-
     display: block;
     margin-left: auto;
     margin-right: auto;

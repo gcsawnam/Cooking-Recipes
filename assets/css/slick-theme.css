@@ -2,16 +2,10 @@
 
 /* Slider */
 .slick-loading .slick-list {
-    /* background: #fff url('./ajax-loader.gif') center center no-repeat; */
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
-
-
-
-
-
-
 
 @font-face {
     font-family: 'slick';
@@ -32,18 +26,11 @@
     display: none !important;
 }
 
-
-
-/* .slick-active{
-    width: 30px;
-  } */
-
-
 .slick-prev {
- background-color: white;
-   font-size: 0;
+    background-color: white;
+    font-size: 0;
     line-height: 0;
-  position: absolute;
+    position: absolute;
     top: 49%;
     left: 8%;
     z-index: 3;
@@ -76,7 +63,7 @@
     cursor: pointer;
     border: none;
     outline: none;
- background-color: white;
+    background-color: white;
 
 }
 
@@ -84,15 +71,11 @@
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-    /* background-color: rgb(241, 13, 13) !important; */
     outline: none;
     color: black !important;
 
 
 }
-
-
-
 
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -100,7 +83,7 @@
 .slick-next:focus:before {
     opacity: 1;
     color: white !important;
-    
+
 
 }
 
@@ -110,28 +93,22 @@
 
 }
 
-
-
-
 [aria-disabled='true'] .slick-prev {
-    /* display: none;
-     */
+
     opacity: 0;
 }
 
-
-
 .slick-prev::before {
-    content:'❮';
+    content: '❮';
     font-size: 28px;
-    color: black;  
+    color: black;
 }
 
 .slick-next:before {
-     content: '❯';
+    content: '❯';
     font-size: 28px;
-     
-     color: black;
+
+    color: black;
     border-radius: 50%;
 }
 
@@ -164,7 +141,8 @@
     content: '\3c';
 
 }
-.slick-slide{
+
+.slick-slide {
     margin: 0 10px;
 }
 
@@ -197,22 +175,17 @@
     height: 20px;
     margin: 0 5px;
     padding: 0;
-
     cursor: pointer;
 }
 
 .slick-dots li button {
     font-size: 0;
     line-height: 0;
-
     display: block;
-
     width: 20px;
     height: 20px;
     padding: 5px;
-
     cursor: pointer;
-
     color: transparent;
     border: 0;
     outline: none;
@@ -270,12 +243,12 @@
     display: none !important;
 }
 
-.slick-arrow:hover{
-background-color:black !important;
+.slick-arrow:hover {
+    background-color: black !important;
 }
 
 
 .slick-slider:hover .slick-arrow {
     display: block !important;
-    
+
 }
