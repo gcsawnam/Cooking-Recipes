@@ -5,6 +5,10 @@ $(document).ready(function () {
     $("#primary-id-items1").css("display", "none");
     $("#primary-id-items2").css("display", "block");
     $("#celsius-header-close-icons").css("display", "block");
+  
+  
+
+
   }),
     $("#celsius-header-close-icons").click(function () {
       $(this).css("display", "none");
@@ -12,7 +16,19 @@ $(document).ready(function () {
       $("#primary-id-items1").css("display", "block");
       $("#primary-id-items2").css("display", "none");
       $(".celsius-header-search-icons").css("display", "block");
+   
     }),
+    $(".celsius-overlay-menu-bar").click(function () {
+      $(".menuitems , #primary-id-items1").css("left", "0vw");
+
+       }),
+
+       $(".fa-xmark").click(function () {
+      $(".menuitems , #primary-id-items1").css("left", "-100vw");
+
+         }),
+     
+
  $(".celsius-search-item-wrap-main-section").slick({
     infinite: false,
     speed: 300,

@@ -98,7 +98,9 @@ body {
 #celsius-search-box {
   display: none;
 }
-
+.menuitems{
+  display: none;
+}
 #primary-id-items2 {
   display: none;
 }
@@ -802,6 +804,9 @@ textarea:focus, input:focus {
       font-size: 14px;
 
   }
+  .celsius-search-item-wrap-items {
+    max-width: 17.5%;
+  }
 
 }
 @media only screen and (max-width:1067px){
@@ -817,6 +822,9 @@ textarea:focus, input:focus {
 @media only screen and (max-width:1272px) {
   .celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
     font-size: 12px;
+}
+.smart-section-button{
+  margin-top: 10px;
 }
 }
 
