@@ -5,9 +5,9 @@ $(document).ready(function () {
     $("#primary-id-items1").css("display", "none");
     $("#primary-id-items2").css("display", "block");
     $("#celsius-header-close-icons").css("display", "block");
-  
-  
-
+   $('.celsius-overlay-menu-bar,.celsius-cooking-site-branding,.celsius-dropdown ,.celsius-header-heart-icon ').addClass('menu-item-display');
+   $('.celsius-header-right-items ').addClass('menu-item-display1');
+     
 
   }),
     $("#celsius-header-close-icons").click(function () {
@@ -16,7 +16,9 @@ $(document).ready(function () {
       $("#primary-id-items1").css("display", "block");
       $("#primary-id-items2").css("display", "none");
       $(".celsius-header-search-icons").css("display", "block");
-   
+   $('.celsius-overlay-menu-bar,.celsius-cooking-site-branding,.celsius-dropdown ,.celsius-header-heart-icon ').removeClass('menu-item-display');
+   $('.celsius-header-right-items ').removeClass('menu-item-display1');
+       
     }),
     $(".celsius-overlay-menu-bar").click(function () {
       $(".menuitems , #primary-id-items1").css("left", "0vw");

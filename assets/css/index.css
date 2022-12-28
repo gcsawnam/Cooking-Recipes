@@ -108,6 +108,8 @@ body {
 
 .celsius-searchIcons-form {
   display: flex;
+  /* width: 100%; */
+
 }
 
 .celsius-searchIcons-form .searchIcons-Box {
@@ -164,6 +166,7 @@ textarea:focus, input:focus {
   flex: 0.5;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: flex-end;
 
 }
@@ -733,6 +736,44 @@ textarea:focus, input:focus {
 
 
 /* media queries section starts here  */
+
+
+
+
+@media only screen and (max-width:1272px) {
+  .celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
+    font-size: 12px;
+}
+.smart-section-button{
+  margin-top: 10px;
+}
+.celsius-cooking-site-branding strong {
+  font-size: 14px;
+}
+}
+
+@media only screen and (max-width:1172px) {
+  .celsius-cooking-banner-content h1 {
+      color: #ffffff;
+      font-size: 2.9em;
+  }
+
+
+}
+
+
+@media only screen and (max-width:1067px){
+  .celsius-cooking-navbar-items a {
+      font-size: 0.9em;
+  }
+
+  .celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
+      font-size: 12px;
+  }
+
+}
+
+
 @media only screen and (max-width: 1024px) {
   .celsius-container {
       padding: 0 2%;
@@ -752,7 +793,7 @@ textarea:focus, input:focus {
 
   .dropdown-content {
       min-width: 100px;
-      left: 78%;
+      left: 82%;
 
   }
 
@@ -766,17 +807,15 @@ textarea:focus, input:focus {
 
   .celsius-cooking-banner-content h1 {
       color: #ffffff;
-      font-size: 3em;
+      font-size: 2.5em;
+      
   }
 
   .celsius-banner-search {
       width: 40em;
   }
 
-  .celsius-banner-button {
-      left: -9em;
-  }
-
+  
   .celsius-search-item-wrap-items {
       max-width: 9%;
 
@@ -807,39 +846,377 @@ textarea:focus, input:focus {
   .celsius-search-item-wrap-items {
     max-width: 17.5%;
   }
-
-}
-@media only screen and (max-width:1067px){
-  .celsius-cooking-navbar-items a {
-      font-size: 0.9em;
-  }
-
-  .celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
-      font-size: 12px;
+  .celsius-banner-button {
+    left: -9em;
   }
 
 }
-@media only screen and (max-width:1272px) {
-  .celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
-    font-size: 12px;
-}
-.smart-section-button{
-  margin-top: 10px;
-}
-}
 
-@media only screen and (max-width:1172px) {
+
+
+@media only screen and (max-width:768px) {
+
+  .celsius-container {
+      padding: 0 2%;
+  }
+
+  .celsius-container-box {
+      padding: 0 1%;
+  }
+
+  .celsius-smart-section {
+      padding: 6% 2% 0 2%;
+  }
+
+ 
+  .dropdown-content {
+      min-width: 100px;
+      left: 78%;
+
+  }
+
+  .celsius-cooking-banner-wrapper {
+      height: 90vh;
+  }
+
+  .celsius-cooking-banner-content {
+      height: 90%;
+  }
+
   .celsius-cooking-banner-content h1 {
       color: #ffffff;
-      font-size: 2.9em;
+      font-size: 2.5em;
   }
 
+  .celsius-banner-search {
+      width: 40em;
+  }
 
-}
+  .celsius-banner-button {
+      left: -9em;
+  }
 
-@media only screen and (max-width:1271px) {
-  .celsius-cooking-site-branding strong {
+  .celsius-search-item-wrap-items {
+      max-width: 9%;
+
+  }
+
+  .celsius-blocks-boxed-subtitle-section .titles, .celsius-blocks-boxed-subtitle-section1 .titles {
+      font-size: 24px;
+  }
+
+  .celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
+      font-size: 13px;
+  }
+
+  .smart-section-button a {
+      height: 2.8em;
+      width: 10.3em;
+      background-color: black;
+
+  }
+
+  .readmore-button p {
+      position: absolute;
+      top: 12px;
+      left: 36px;
       font-size: 14px;
+
   }
 
+
+.menuitems,#primary-id-items1{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  top: 7%;
+  /* left: 0vw; */
+  left: -100vw;
+  /* left:-100%; */
+  /* left: -100vw; */
+  /* display: none; */
 }
+.celsius-cooking-navbar-items li{
+  height: 1vh;
+}
+
+.celsius-cooking-site-branding{
+  flex: 2;
+  /* width: 400px; */
+position: relative;
+left: 140px;
+  
+}
+.menu-item-display{
+  display:none !important;
+  border: 2px solid red;
+}
+.menu-item-display1{
+  width: 10%
+}
+
+
+.celsius-cooking-site-branding strong{
+  font-size: 26px;
+
+}
+.celsius-overlay-menu-bar{
+  display: block;
+  /* border: 2px solid black; */
+ 
+  /* flex: 0.5; */
+  width:50px;
+}
+.fa-bars{
+  text-align: center;
+  font-size: 35px;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  
+}
+.celsius-header-right{
+
+flex: 1;  /* position: relative; */
+   /* right: 20px; */
+  /* width: 200px; */
+}
+.celsius-cooking-navbar-items{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  height: 25vh;
+  padding-left: 10px;
+}
+.menuitems{
+  display: block;
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  position: fixed;
+  height: 8vh;
+  top: 0;
+  text-align: center;
+  align-items: center;
+   width: 100vw;
+  background-color:black;
+  color: white;
+   }
+   .menuitems .fa-xmark{
+      font-size: 35px;
+      margin-right: 15px;
+      border-radius: 50%;
+   }
+   .menuitems h1{
+      font-size: 22px;
+      margin-left: 15px;
+   }
+   #primary-id-items2{
+      display: block;
+      position: relative;
+      top: 0;
+   }
+#primary-id-items2{
+  display: none;
+}
+.celsius-searchIcons-form .searchIcons-Box {
+  flex: 4;
+  /* border: 2px solid red; */
+   
+}
+.celsius-right-searchIcons
+{
+  width: 650px
+  
+}
+.celsius-header-close-icons{
+  position: relative;
+  right: 10px;
+}
+
+
+
+.celsius-blocks-boxed-section-inner {
+  flex-direction: column;
+}
+.celsius-blocks-boxed-section-inner-2{
+  flex-direction: column-reverse;
+}
+.smart-section-button{
+  margin-top: 20px;
+  /* border: 2px solid red; */
+}
+.celsius-blocks-boxed-subtitle-section1,.celsius-blocks-boxed-subtitle-section{
+  margin-top: 20px;
+
+}
+.celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
+  font-size: 17px;
+}
+.celsius-search-item-wrap-items {
+  max-width: 20.5%;
+}
+.celsius-right-searchIcons
+{
+  width: 560px
+  
+}
+
+}
+
+
+@media only screen and (max-width: 654px) {
+
+  .celsius-right-searchIcons
+{
+  width: 450px
+  
+}
+  .celsius-banner-search {
+    width: 24em;
+}
+.celsius-cooking-banner-content h1 {
+  font-size: 2em;
+}
+.celsius-banner-button{
+  left: -1em ;
+
+}
+.celsius-cooking-banner-content h1 {
+  font-size: 2em;
+  width: 400px;
+}
+.celsius-cooking-site-branding strong {
+  font-size: 15px;
+}
+.celsius-header-right{
+  flex: 1.8;
+}
+.celsius-banner-search {
+  margin-top: 1.2em;
+}
+
+}
+@media only screen and (max-width: 412px) {
+
+  .celsius-banner-search {
+    width: 20em;
+}
+.celsius-banner-button{
+  left: 0 ;
+
+}
+.button-item{
+  width: 20%;
+}
+.button-item p {
+ left: 20px;
+}
+.celsius-cooking-banner-content h1 {
+  font-size: 1.8em;
+  width: 400px;
+  padding-left: 35px;
+}
+.celsius-cooking-site-branding {
+  left: 40px;
+  flex: 3;
+}
+.celsius-cooking-site-branding strong {
+  font-size: 13px;
+}
+.celsius-header-right{
+  flex: 2.8;
+}
+.dropdown-content {
+  left: 66%;
+}
+.celsius-searchIcons-form .searchIcons-Box{
+  width: 10%;
+}
+.celsius-right-searchIcons
+{
+  width: 350px;
+}
+.celsius-header-close-icons{
+  position: relative;
+  right: 20px;
+}
+.celsius-search-item-wrap-items {
+  max-width: 10.5%;
+}
+.celsius-blocks-title{
+  font-size: 17px;
+}
+.celsius-blocks-subtitle{
+  font-size: 18px;
+}
+.celsius-container-box {
+  padding: 0 1px;
+}
+
+.celsius-smart-section {
+  padding: 7% 0 0 0;
+}
+.celsius-blocks-boxed-subtitle-section .sub-discription, .celsius-blocks-boxed-subtitle-section1 .sub-discription {
+  font-size: 15px;
+}
+.celsius-blocks-boxed-title-section-1,.celsius-blocks-boxed-title-section {
+  padding-left: 5px;
+  padding-right: 5px;
+} 
+.menu-item-1 a ,.celsius-cooking-footer-copyright-text{
+  font-size: 13px
+}
+
+}
+@media only screen and (max-width: 360px) {
+  .celsius-banner-search {
+    width: 15em;
+    margin-top: 3px;
+
+}
+
+.celsius-banner-button{
+  left: -1em ;
+  width: 15em;
+  margin-top: 2px;
+
+}
+.celsius-cooking-banner-content h1 {
+  font-size: 1.4em;
+  width: 323px;
+  padding-left: 20px;
+}
+.button-item{
+  width: 25%;
+}
+.button-item p {
+ left: 17px;
+ font-size: 11px;
+}
+.celsius-searchIcons-form .searchIcons-Box{
+  width: 10%;
+}
+.celsius-right-searchIcons
+{
+  width: 300px;
+}
+.celsius-cooking-site-branding strong {
+  font-size: 12px;
+}
+.celsius-header-right {
+  flex: 3.2;
+}
+.celsius-banner-search {
+  margin-top: 1.6em;
+}
+#menu-footer-menu{
+flex-wrap: wrap;
+}
+}
+
+
+
+
+
