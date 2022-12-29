@@ -25,6 +25,16 @@ $(document).ready(function () {
 
        }),
 
+
+       $(".fa-angle-down").click(function () {
+
+        console.log('button is clicked ')
+        $("#recipes-items").toggle();
+      
+       
+       }),
+       
+
        $(".fa-xmark").click(function () {
       $(".menuitems , #primary-id-items1").css("left", "-100vw");
 
@@ -50,3 +60,9 @@ $(document).ready(function () {
     centerMode: false,
   });
 });
+
+
+
+
+ 
+  
