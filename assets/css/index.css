@@ -775,6 +775,9 @@ textarea:focus, input:focus {
 
 
 @media only screen and (max-width: 1024px) {
+ 
+  
+  
   .celsius-container {
       padding: 0 2%;
   }
@@ -852,10 +855,17 @@ textarea:focus, input:focus {
 
 }
 
-
-
 @media only screen and (max-width:768px) {
 
+.menuitems{
+  transition: 1s  all ease;
+
+}
+#primary-id-items1{
+  transition: 1s  all ease;
+
+}
+ 
   .celsius-container {
       padding: 0 2%;
   }
@@ -921,29 +931,20 @@ textarea:focus, input:focus {
       top: 12px;
       left: 36px;
       font-size: 14px;
-
   }
-
-
 .menuitems,#primary-id-items1{
   position: fixed;
   height: 100vh;
   width: 100vw;
   background-color: white;
   top: 7%;
-  /* left: 0vw; */
   left: -100vw;
-  /* left:-100%; */
-  /* left: -100vw; */
-  /* display: none; */
 }
 .celsius-cooking-navbar-items li{
   height: 1vh;
 }
-
 .celsius-cooking-site-branding{
   flex: 2;
-  /* width: 400px; */
 position: relative;
 left: 140px;
   
@@ -963,36 +964,28 @@ left: 140px;
 }
 .celsius-overlay-menu-bar{
   display: block;
-  /* border: 2px solid black; */
- 
-  /* flex: 0.5; */
   width:50px;
 }
 .fa-bars{
   text-align: center;
   font-size: 35px;
-  /* border: 2px solid red; */
   justify-content: center;
   align-items: center;
   
 }
 .celsius-header-right{
 
-flex: 1;  /* position: relative; */
-   /* right: 20px; */
-  /* width: 200px; */
+flex: 1;  
 }
 .celsius-cooking-navbar-items{
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   height: 25vh;
   padding-left: 10px;
 }
 .menuitems{
   display: block;
   display: flex;
-  /* border: 2px solid red; */
   justify-content: space-between;
   position: fixed;
   height: 8vh;
@@ -1022,7 +1015,6 @@ flex: 1;  /* position: relative; */
 }
 .celsius-searchIcons-form .searchIcons-Box {
   flex: 4;
-  /* border: 2px solid red; */
    
 }
 .celsius-right-searchIcons
@@ -1045,7 +1037,6 @@ flex: 1;  /* position: relative; */
 }
 .smart-section-button{
   margin-top: 20px;
-  /* border: 2px solid red; */
 }
 .celsius-blocks-boxed-subtitle-section1,.celsius-blocks-boxed-subtitle-section{
   margin-top: 20px;
@@ -1062,10 +1053,7 @@ flex: 1;  /* position: relative; */
   width: 560px
   
 }
-
 }
-
-
 @media only screen and (max-width: 654px) {
 
   .celsius-right-searchIcons
