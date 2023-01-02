@@ -1,0 +1,39 @@
+@mixin flex($flex1){
+    display: flex;
+    justify-content: $flex1;
+    align-items: center;
+}
+@mixin flexprop{
+    display: flex;
+    flex-direction: column;
+}
+@mixin navbar-border{
+    border-top: 2px;
+            padding-left: 15px;
+            border: 2px solid black;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+}
+@mixin positionprop($prop1,$prop2,$prop3){
+    position: $prop1;
+    top: $prop2;
+    right: $prop3;
+}
+@mixin common-padding($pad1,$pad2){
+padding:$pad1 $pad2;
+}
+@mixin common-padding1($var4,$var5){
+padding:$var4 $var5;
+   
+}
+@mixin common-smartsection($var6,$var7,$var8,$var9){
+    padding:$var6 $var7 $var8 $var9;
+}
+
+@mixin position-changes($var1,$var2,$var3){
+    position: $var1;
+    top: $var2;
+    left: $var3;
+}

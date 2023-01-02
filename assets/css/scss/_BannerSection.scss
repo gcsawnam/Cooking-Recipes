@@ -1,0 +1,106 @@
+@import "mixin";
+@import "color";
+
+.celsius-cooking-banner-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../Images/Banner.jpg");
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+  padding: 80px 0;
+
+  .celsius-cooking-banner-content {
+    height: 80%;
+    @include flex(center);
+    flex-direction: column;
+    h1 {
+      color: #ffffff;
+      font-size: 3.6rem;
+      @media (max-width: $ipad) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+  .celsius-banner-content-paragraph {
+    max-width: 816px;
+    @media (max-width: $ipad) {
+      max-width: 548px;
+    }
+  }
+  .celsius-banner-search {
+    border-radius: none;
+    margin: 15px auto 0;
+    display: flex;
+    margin-top: 1.6rem;
+    width: 55rem;
+    @media (max-width: $ipad) {
+      width: 37rem;
+    }
+  }
+  .celsius-banner-form {
+    width: 100%;
+    border: none;
+  }
+
+  .search-field {
+    border: none;
+    height: 4rem;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 15px;
+
+    &::placeholder {
+      color: $Black;
+    }
+  }
+
+  .search-submit {
+    height: 4rem;
+    width: 10%;
+    background-color: $Black;
+    border-top-right-radius: 50px 100px;
+    border-bottom-right-radius: 50px 100px;
+    .fa-magnifying-glass {
+      color: $white;
+      font-size: 1.4rem;
+      @include position-changes(relative, 20px, 24px);
+      @media (max-width: $ipad) {
+        @include position-changes(relative, 20px, 14px);
+      }
+    }
+  }
+
+  .celsius-banner-button {
+    @include position-changes(relative, 0.8rem, -12rem);
+    height: 2.6rem;
+    width: 24rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .button-item {
+    height: 100%;
+    width: 27%;
+    background-color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: $Black;
+    font-size: 13px;
+    position: relative;
+    &:hover {
+      background-color: $Black;
+      color: $white;
+    }
+
+    & p {
+      @include position-changes(absolute, 12px, 31px);
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.celsius-smart-section {
+  padding: 4% 9% 0% 9%;
+}
+@media (max-width: 1200px) {
+  .celsius-smart-section {
+    padding: 4% 4% 0% 4%;
+  }
+}
+
+.celsius-blocks-boxed-section-inner {
+  display: flex;
+}
+
+.celsius-blocks-boxed-image-section {
+  flex: 1;
+}
+.celsius-blocks-boxed-image-section img {
+  height: 100%;
+  width: 100%;
+  padding: 2px 2px 2px 2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.celsius-blocks-boxed-title-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding-left: 23px;
+}
+
+.celsius-blocks-boxed-subtitle-section {
+  max-width: 100%;
+  text-align: left;
+}
+.celsius-blocks-boxed-subtitle-section .titles {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: inherit;
+  line-height: 1.5;
+  color: #3F3F3f;
+}
+
+.celsius-blocks-boxed-subtitle-section .sub-discription {
+  padding-top: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #3F3F3f;
+}
+
+.smart-section-button {
+  display: flex;
+}
+.smart-section-button a {
+  height: 3em;
+  width: 12em;
+  background-color: #000000;
+}
+
+.readmore-button {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.readmore-button p {
+  position: absolute;
+  top: 12px;
+  left: 46px;
+}
+
+.celsius-blocks-boxed-section-inner-2 {
+  display: flex;
+}
+
+.celsius-blocks-boxed-image-section-1 {
+  flex: 1;
+}
+.celsius-blocks-boxed-image-section-1 img {
+  height: 100%;
+  width: 100%;
+  padding: 2px 2px 2px 2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.celsius-blocks-boxed-title-section-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.celsius-blocks-boxed-subtitle-section1 .titles {
+  font-size: 26px;
+  text-transform: inherit;
+  line-height: 1.5;
+  color: #3F3F3f;
+}
+
+.celsius-blocks-boxed-title-section-1 {
+  font-size: 1.6em;
+  color: #3F3F3f;
+  padding-right: 17px;
+}
+
+.celsius-blocks-boxed-title-section-1 .sub-discription {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #3F3F3f;
+}/*# sourceMappingURL=celsius-blocks-list.css.map */

@@ -15,8 +15,8 @@
 
 
     <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/css/Resonsive.css">
+    <!-- <link rel="stylesheet" href="./assets/css/index0.css"> -->
+    <link rel="stylesheet" href="./assets/css/scss/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <script src="./assets/js/jquery.js"></script>
@@ -65,14 +65,14 @@
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
-            <div id='primary-id-items2' class="celsius-right-searchIcons">
+            <div id='primary-id-items2' class="celsius-navbar-searchIcons">
                 <form class="celsius-searchIcons-form" action="#">
 
                     <input class='searchIcons-Box' type="text" placeholder="Search.." id="searchIcons">
 
                     <div class="searchbox-icons">
-                        <button class='searchIcons-box' type="submit " onclick="searchIcon"><i
-                                class="fa fa-search"></i></button>
+                        <a href="" class='searchIcons-box' type="submit " onclick="searchIcon"><i
+                                class="fa fa-search"></i> </a>
                     </div>
                 </form>
             </div>
@@ -80,9 +80,9 @@
         <div class="celsius-header-right">
             <div class="celsius-header-right-items">
                 <div class="celsius-dropdown ">
-                    <button class="dropbtn">
+                    <a class="dropbtn" href="">
                         <i class="fa-solid fa-earth-asia"> </i>
-                    </button>
+                    </a>
                     <div class="dropdown-content">
                         <a href="#">English</a>
                         <a href="#">Nedrlands</a>
@@ -98,15 +98,18 @@
                     </div>
                 </div>
                 <div class="celsius-header-heart-icon">
-                    <button type="submit " onclick="searchIcon"><i class="fa-regular fa-heart"></i></button>
+                    <a href=""><i class="fa-regular fa-heart"></i></a>
                 </div>
-                <div id="celsius-header-search-icons" class="celsius-header-search-icons">
+                <div class="celsius-header-search-icons">
 
-                    <button type="submit "><i class="fa fa-search"></i></button>
+                    <a href="" type="submit "><i class="fa fa-search"></i>
+                      <div class="close-icons">  <i class="fa-solid fa-xmark"></i></div>
+
+                    </a>
                 </div>
-                <div id="celsius-header-close-icons" class='celsius-header-close-icons'>
-                    <button type="submit "><i class="fa-solid fa-xmark"></i></button>
-                </div>
+                <!-- <div >
+                <a href="" id="celsius-header-close-icons" class='celsius-header-close-icons' href="" type="submit "></a>
+                </div> -->
             </div>
     </header>
 
@@ -115,18 +118,20 @@
     <!-- Banner Section Starts here -->
     <div class="celsius-cooking-banner-wrapper">
         <div class="celsius-cooking-banner-content celsius-container">
-            <h1>Temperature Controlled cooking.</h1>
-            <h1>it's in your hands</h1>
-            <div class="celsius-banner-search">
-                <div class="celsius-banner-form">
-                    <form action="#" class="celsius-search-box">
-                        <input type="text" placeholder="Search.." class="search-field">
+            <h1 class='celsius-banner-content-paragraph'>Temperature Controlled cooking.It's in your hands.</h1>
+            <div class="banner">
+                <div class="celsius-banner-search">
+                    <div class="celsius-banner-form">
+                        <form action="#" class="celsius-search-box">
+                            <input type="text" placeholder="Search.." class="search-field">
+                    </div>
+                    <div class="search-submit">
+                        <a href="" type="submit"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    </form>
                 </div>
-                <div>
-                    <button type="submit" class="search-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                </form>
             </div>
+
             <div class="celsius-banner-button">
                 <a class="button-item" href="">
                     <p>Dinner</p>
@@ -159,7 +164,7 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -187,7 +192,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -216,7 +222,8 @@
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
 
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -244,7 +251,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -273,7 +281,8 @@
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
 
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -303,7 +312,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -332,7 +342,8 @@
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
 
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -368,7 +379,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -397,7 +409,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -428,7 +441,8 @@
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
 
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -458,7 +472,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -488,7 +503,8 @@
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
 
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -519,7 +535,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
-                    <button><i class="fa-solid fa-heart"></i></button>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -547,8 +564,8 @@
             <div class="celsius-achive-details">
                 <div class="celsius-achive-details-title">
                     <span> <a href=""> Carrot Cake Pancakes </a></span>
+                    <span class='heart-icon'><a href=""><i class="fa-solid fa-heart"></i></a> </span>
 
-                    <button><i class="fa-solid fa-heart"></i></button>
                 </div>
                 <div class="celsius-achive-details-paragraph">
                     <p>Who said cake is not a good breakfast option?
@@ -634,7 +651,7 @@
     </div>
     <!--Another Smart Sections parts ends here -->
     <!-- footer parts starts here -->
-    <footer class="celsius-cooking-footer-area-wrapper">
+    <footer class="celsius-cooking-footer-area-wrapper celsius-container">
         <div class="celsius-cooking-container1">
             <div class="celsius-cooking-widget-wrapper">
                 <section id="block-9" class="widget widget-block">

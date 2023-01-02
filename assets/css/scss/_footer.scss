@@ -1,0 +1,59 @@
+@import'color';
+@import 'mixin';
+.celsius-cooking-footer-area-wrapper {
+    margin-top: 90px;
+    padding: 15px 0 10px;
+    border-top: 1px solid #eee;
+  }
+  .celsius-cooking-widget-wrapper {
+    color:$white;
+  }
+  .wp-container-9-image {
+    @include flex(center);
+  }
+  .wp-container-7 img {
+    height: 60px;
+    width: 120px;
+    padding: 16px 13px 16px 8px;
+  }
+  .wp-container-8 img {
+    height: 60px;
+    width: 120px;
+    margin-left: 20px;
+    height: 90px;
+    width: 200px;
+    padding: 16px 21px 15px 13px;
+  }
+  .nav-menu-2 {
+    margin-top: 10px;
+    text-align: center;
+    @include flex(center);
+
+  }
+  
+  #menu-footer-menu {
+    width: 1000px;
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: space-evenly;
+    height: 50px;
+  }
+  .menu-item-1 a {
+    font-size: 15px;
+   text-decoration: none;
+    color:$bg-dark-light;
+  }
+  .celsius-cooking-footer-copyright-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: $bg-dark-light;
+  }
+  

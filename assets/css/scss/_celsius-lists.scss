@@ -1,0 +1,152 @@
+@import 'color';
+@import 'mixin';
+
+.celsius-container-box {
+  @include common-padding1(0%,8.3%);
+
+  @media (max-width:$ipadpro) {
+  @include common-padding1(0%,3%);
+       
+      }
+ 
+}
+.slick-list {
+  overflow: visible;
+  max-width: 1300px;
+}
+
+.celsius-blocks-section-inner {
+    height: 100px;
+  }
+.celsius-blocks-heading-section {
+    display: flex;
+
+  }
+  
+  .celsius-blocks-title {
+    position: relative;
+    top: 40px;
+    font-size: 22px;
+    color: $bg-dark-light;
+  }
+  
+  .celsius-blocks-subtitle {
+    font-size: 22px;
+    @include position-changes(relative,42px,11px);
+    color:$bg-dark-light;
+  
+  }
+  .celsius-search-item-wrap-main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .celsius-search-item-wrap-items {
+    max-width: 12.5%;
+    @media (max-width:$ipadpro) {
+    max-width: 8%;
+       
+      }
+
+  }
+  .celsius-archive-items img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    padding: 4px;
+  }
+  
+  .celsius-achive-details-title {
+    max-width: 100%;
+    padding-left: 2px;
+    display: flex;
+    justify-content: space-between;
+  
+ span {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    color:$bg-dark-light;
+     a {
+      text-decoration: none;
+      color:$bg-dark-light;
+    
+    }
+  }
+
+}
+  .celsius-achive-details-title a .fa-heart {
+    color:$Red;
+    font-size: 1.5rem;
+  }
+  
+ 
+  .celsius-achive-details-paragraph {
+    margin-top: 10px;
+    max-width: 100%;
+    padding-left: 2px;
+
+    p {
+      font-size: 0.89em;
+      line-height: 1.4;
+      color:$bg-dark-light;
+    
+    }
+  }
+  .celsius-achive-details-icons {
+    display: flex;
+    margin-top: 10px;
+    max-width: 100%;
+    padding-left: 2px;
+    .fa-clock {
+      font-size: 1em;
+      color: $bg-dark-light;
+    
+    }
+     p {
+      margin-left: 15px;
+      color: $bg-dark-light;
+      font-size: 0.89em;
+    
+    }
+  }
+.fa-utensils {
+    margin-left: 20px;
+    font-size: 15px;
+    color: $bg-dark-light;
+  }
+  
+  .celsius-achive-details-pan-icon {
+    margin-top: 20px;
+    display: flex;
+    width: 19%;
+    justify-content: space-between;
+    padding-left: 2px;
+     .fa-kitchen-set {
+      font-size: 1.5em;
+      color:$bg-dark-light;
+      @media (max-width:$ipadpro) {
+    width:9%;
+             
+            }
+    
+    }
+  
+  }
+  .celsius-details-meat-items-title {
+
+    font-size: 22px;
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:$bg-dark-light;
+  }
+  
+  
+

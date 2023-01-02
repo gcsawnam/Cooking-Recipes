@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-
+.celsius-whole-overlay{
+  z-index: 999;
+    opacity: 0.5;
+    visibility: visible;
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -60,6 +64,7 @@ body {
 
 }
 
+
 .celsius-cooking-navbar-items li {
   list-style: none;
 }
@@ -71,10 +76,7 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.celsius-cooking-site-branding {
-  flex: 0.5;
-
-}
+/*  */
 
 .celsius-cooking-navbar-items a::after {
   content: "";
@@ -89,20 +91,6 @@ body {
   width: 100%;
   transition: width .3s;
 }
-
-.celsius-right-searchIcons {
-  display: flex;
-  display: none;
-
-}
-
-.searchIcons-Box {
-  height: 100%;
-}
-
-#celsius-search-box {
-  display: none;
-}
 .menuitems{
   display: none;
 }
@@ -114,6 +102,21 @@ body {
   display: none;
 }
 #recipes-items{
+  display: none;
+}
+
+
+.celsius-navbar-searchIcons {
+  display: flex;
+  display: none;
+
+}
+
+.searchIcons-Box {
+  height: 100%;
+}
+
+#celsius-search-box {
   display: none;
 }
 
@@ -142,9 +145,9 @@ body {
   color: black;
 }
 
-searchIcons-box button {
+/* searchIcons-box button {
   background-color: red;
-}
+} */
 
 .searchIcons-box .fa-search {
   font-size: 1.5em;
@@ -155,7 +158,7 @@ searchIcons-box button {
   right: 31px;
 }
 
-.searchIcons-box-button {
+/* .searchIcons-box-button {
   height: 38px;
   width: 40px;
   border: 2px solid black;
@@ -164,15 +167,10 @@ searchIcons-box button {
   border-bottom-right-radius: 10px;
 }
 
-.searchbox-icons button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-}
 
 textarea:focus, input:focus {
   outline: none;
-}
+} */
 
 .celsius-header-right {
   flex: 0.35;
@@ -180,6 +178,7 @@ textarea:focus, input:focus {
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
+  border: 2px solid black;
 
 }
 
@@ -187,6 +186,7 @@ textarea:focus, input:focus {
   display: flex;
   width: 70%;
   justify-content: space-between;
+  border: 2px solid red;
 }
 
 .celsius-dropdown {
@@ -210,7 +210,7 @@ textarea:focus, input:focus {
   display: none;
   position: absolute;
   top: 77px;
-  left: 75.5%;
+  left: 77.5%;
   background-color: #f9f9f9;
   min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -230,69 +230,56 @@ textarea:focus, input:focus {
 
 .fa-earth-asia {
   font-size: 21px;
+  color: #3F3F3F;
 }
 
-.dropdown-content a:hover {
+ .dropdown-content a:hover {
   background-color: #ddd;
 }
 
 .celsius-dropdown:hover .dropdown-content {
   display: block;
 }
-
-.celsius-header-search-icons button {
-  height: 2.1em;
-  width: 2.1em;
+.celsius-header-heart-icon a .fa-heart {
+  font-size: 21px;
 }
-
 .celsius-header-search-icons .fa-search {
   font-size: 21px;
 
 }
-
-.celsius-header-heart-icon button .fa-heart {
+.celsius-header-search-icons .fa-xmark {
   font-size: 21px;
-}
+  display: none;
 
-.celsius-header-heart-icon button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
 }
-
-.celsius-header-close-icons button {
-  background-color: black;
-  color: white;
-  border-radius: 50%;
+/*
+.celsius-header-search-icons a {
   height: 2.1em;
   width: 2.1em;
 }
 
-#celsius-header-close-icons {
-  display: none;
+
+
+
+
+
+
+.celsius-header-close-icons a {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+
 }
 
-#celsius-header-close-icons .fa-xmark {
-  font-size: 23px;
-}
+
 
 .celsius-header-search-icons {
   display: flex;
   flex-direction: column;
-}
+} */
 
-#celsius-header-search-icons button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
 
-}
 
-.celsius-dropdown button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-}
 
 .celsius-cooking-banner-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Images/Banner.jpg');
@@ -420,22 +407,14 @@ textarea:focus, input:focus {
   justify-content: space-between;
 }
 
-.celsius-achive-details-title a {
+.celsius-achive-details-title span a {
   text-decoration: none;
   color: #3f3f3f;
 
 }
-
-.celsius-achive-details-title button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  font-size: 1.6em;
-}
-
-.celsius-achive-details-title button .fa-heart {
+.celsius-achive-details-title a .fa-heart {
   color: red;
-
+  font-size: 1.5rem;
 }
 
 .celsius-achive-details-title span {
