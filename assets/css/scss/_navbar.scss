@@ -37,17 +37,20 @@
   }
 
   .celsius-cooking-site-branding {
-    flex: 0.5;
-    font-size: 18px;
-    @media (max-width: $ipadpro) {
-      font-size: 15px;
+    img{
+      height:100px;
+      width: 200px;
     }
-    @media (max-width: $ipad) {
-      font-size: 11px;
-    }
+     @media (max-width: $ipad) {
+      width: 50px;
+      flex: 0.8;
+     }
+    // }
     @media (max-width: $phone-ultra) {
-      font-size: 14px;
       position: absolute;
+      flex: 1;
+      width: 50px;
+
     }
     
 
@@ -57,7 +60,7 @@
     
     flex: 2;
     @media (max-width: $ipad) {
-      flex: 2.5;
+      flex: 2;
     }
   
 
@@ -99,7 +102,7 @@
         flex-direction: column;
         margin-top: 20px;
         padding-left: 10px;
-        flex: 2;
+        flex: 2.5;
       }
       & li {
         list-style: none;
@@ -112,7 +115,7 @@
         color: $bg-dark-light;
         font-size: 1.1rem;
         @media (max-width: $ipad) {
-          font-size: 0.9rem;
+          font-size: 0.7rem;
           
         }
         &::after {
@@ -207,14 +210,14 @@
     flex: 0.45;
   }
   @media (max-width: $ipad) {
-    flex: 0.9;
+    flex: 0.6;
   }
   @media (max-width: $phone-small) {
     flex: 1;
   @include flex(flex-end);
 
   }
-
+ 
   flex: 0.35;
   @include flex(flex-end);
   

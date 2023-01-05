@@ -15,6 +15,7 @@ $(document).ready(function () {
     ? (SearchBtn.src = "./assets/images/magnifying-glass-solid.svg")
     : (SearchBtn.src = "./assets/images/circle-xmark-solid.svg");
 
+    
     isSearchclick
     ? $(".celsius-cooking-navbar-items").css("display","flex")
      
