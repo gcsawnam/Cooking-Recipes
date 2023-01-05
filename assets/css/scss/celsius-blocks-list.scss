@@ -4,13 +4,19 @@
 
 .celsius-smart-section {
   @include common-smartsection(4%, 9%, 0%, 9%);
-  @media (max-width:$ipadpro) {
-  @include common-smartsection(4%, 4%, 0%, 4%);
-     
+  @media (max-width: $ipadpro) {
+    @include common-smartsection(4%, 4%, 0%, 4%);
+  }
+  @media (max-width: $phone-small) {
+    @include common-padding(0%, 0%);
+    
     }
 }
 .celsius-blocks-boxed-section-inner {
   display: flex;
+  @media (max-width: $phone-ultra) {
+    flex-direction: column;
+  }
 }
 .celsius-blocks-boxed-image-section {
   flex: 1;
@@ -27,6 +33,9 @@
   flex: 1;
   justify-content: space-between;
   padding-left: 23px;
+  @media (max-width: $phone-ultra) {
+    padding: 0 0;
+  }
 }
 .celsius-blocks-boxed-subtitle-section {
   max-width: 100%;
@@ -50,6 +59,9 @@
 
 .smart-section-button {
   display: flex;
+  @media (max-width:$phone-ultra){
+    margin-top: 25px;
+  }
   a {
     height: 3em;
     width: 12em;
@@ -73,6 +85,9 @@
 
 .celsius-blocks-boxed-section-inner-2 {
   display: flex;
+  @media (max-width: $phone-ultra) {
+    flex-direction: column-reverse;
+  }
 }
 
 .celsius-blocks-boxed-image-section-1 {
@@ -82,6 +97,9 @@
     width: 100%;
     padding: 2px 2px 2px 2px;
     object-fit: cover;
+  }
+  @media (max-width: $phone-ultra) {
+    padding: 0 0;
   }
 }
 
@@ -110,6 +128,5 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color:$bg-dark-light;
-
+  color: $bg-dark-light;
 }

@@ -8,6 +8,10 @@
   @include common-padding1(0%,3%);
        
       }
+      @media (max-width: $phone-small) {
+        @include common-padding(0%, 0%);
+        
+        }
  
 }
 .slick-list {
@@ -28,12 +32,20 @@
     top: 40px;
     font-size: 22px;
     color: $bg-dark-light;
+    @media (max-width: $phone-small) {
+    font-size: 18px;
+      
+      }
   }
   
   .celsius-blocks-subtitle {
     font-size: 22px;
     @include position-changes(relative,42px,11px);
     color:$bg-dark-light;
+    @media (max-width: $phone-small) {
+      font-size: 16px;
+        
+        }
   
   }
   .celsius-search-item-wrap-main-section {
@@ -51,6 +63,10 @@
     max-width: 8%;
        
       }
+      @media (max-width:$phone-ultra) {
+        max-width: 15%;
+           
+          }
 
   }
   .celsius-archive-items img {
@@ -65,6 +81,7 @@
     padding-left: 2px;
     display: flex;
     justify-content: space-between;
+    
   
  span {
     font-weight: bold;
